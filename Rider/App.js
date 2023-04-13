@@ -6,15 +6,16 @@
  * @flow strict-local
  */
 
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import {SafeAreaView, StyleSheet, useColorScheme} from 'react-native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import { SafeAreaView, StyleSheet, useColorScheme } from 'react-native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { PersistGate } from "redux-persist/integration/react";
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 import Deliveries from './src/screens/Deliveries';
 import Home from './src/screens/Home';
+import { Provider } from 'react-redux'
 import MapView from './src/screens/MapView';
 import OderDetails from './src/screens/OderDetails';
 import Reason from './src/screens/Reason';
@@ -25,6 +26,10 @@ import Splash from './src/screens/Splash';
 import Welcome from './src/screens/Welcome';
 import BottomTab from './src/components/BottomTab';
 import Profile from './src/screens/Profile';
+import toastConfig from './src/utils/ToastConfig';
+import { Toast } from 'react-native-toast-message/lib/src/Toast';
+import { Store } from './src/store/store';
+import persistStore from 'redux-persist/es/persistStore';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -60,22 +65,27 @@ const App = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-
+  const persistor = persistStore(Store);
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerShown: false,
-          gestureEnabled: false,
-        }}
-        initialRouteName={SCREENS.Splash}>
-        <Stack.Screen name={SCREENS.Splash} component={Splash} />
-        <Stack.Screen name={SCREENS.Welcome} component={Welcome} />
-        <Stack.Screen name={SCREENS.SingIn} component={SingIn} />
-        <Stack.Screen name={SCREENS.SingUp} component={SingUp} />
-        <Stack.Screen name={SCREENS.Deliveries} component={TAB} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Provider store={Store}>
+       <PersistGate loading={null} persistor={persistor}>
+      <NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{
+            headerShown: false,
+            gestureEnabled: false,
+          }}
+          initialRouteName={SCREENS.Splash}>
+          <Stack.Screen name={SCREENS.Splash} component={Splash} />
+          <Stack.Screen name={SCREENS.Welcome} component={Welcome} />
+          <Stack.Screen name={SCREENS.SingIn} component={SingIn} />
+          <Stack.Screen name={SCREENS.SingUp} component={SingUp} />
+          <Stack.Screen name={SCREENS.Deliveries} component={TAB} />
+        </Stack.Navigator>
+        <Toast config={toastConfig} />
+      </NavigationContainer>
+      </PersistGate>
+    </Provider>
   );
 };
 
