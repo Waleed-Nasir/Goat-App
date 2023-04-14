@@ -21,7 +21,8 @@ import Item from '../components/Item';
 import Tabs from '../components/Tabs';
 import Layout from '../Layout';
 import Header from './Header';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { getOrderDetails } from '../store/slice/HomeSlices';
 const { width } = Dimensions.get('screen')
 
 
@@ -51,10 +52,17 @@ const Orders = {
 }
 
 const Deliveries = () => {
+    const dispatch = useDispatch()
     const [current, handleSelction] = useState(0)
     const navigation = useNavigation();
-    const OrderList = useSelector((State)=>State)
-    console.log(OrderList)
+    const { OrderList } = useSelector((State) => State.Home)
+
+    const fetchOrderDetails = (id) => {
+        dispatch(getOrderDetails({ orderId: id }))
+        navigation.navigate(SCREENS.OderDetails)
+    }
+
+
     return (
         <Layout
             Header={() => <Header />}
@@ -62,7 +70,7 @@ const Deliveries = () => {
             <View style={styles.Main}>
                 <Tabs current={current} handleSelction={handleSelction} />
                 <View style={{ height: 30 }} />
-                {Orders[current].map((item) => <Item {...item} onPress={()=>navigation.navigate(SCREENS.OderDetails)} />)}
+                {OrderList.map((item) => <Item {...item} onPress={() => fetchOrderDetails(item._id)} />)}
             </View>
         </Layout>
     );

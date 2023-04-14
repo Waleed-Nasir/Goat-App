@@ -15,19 +15,19 @@ import { COLOR } from '../assets/colors';
 import { Assets } from '../assets/images';
 
 
-const Item = ({ OrderNo = '', Status = '', Type = '', onPress }) => {
+const Item = ({ _id = '', total = '', paymentMethod = '', onPress }) => {
     return (
 
         <TouchableOpacity style={styles.OrderView} onPress={onPress}>
             <View style={styles.OrderInfo}>
                 <Image source={Assets.Checkx} style={styles.ph_10} />
-                <View style={styles.ph_10}>
-                    <Text style={styles.OrderText}>{OrderNo}</Text>
-                    <Text style={[styles.OrderText, { fontSize: 12 }]}>{Type}</Text>
+                <View style={[styles.ph_10, { flex: 1 }]}>
+                    <Text style={styles.OrderText} numberOfLines={1} ellipsizeMode='middle'>Order # {_id}</Text>
+                    <Text style={[styles.OrderText, { fontSize: 12 }]}>{paymentMethod}</Text>
                 </View>
             </View>
             <View style={styles.PriceInfo}>
-                <Text style={styles.PriceText}>{Status}</Text>
+                <Text style={styles.PriceText}>{total}</Text>
             </View>
         </TouchableOpacity>
     );
@@ -50,7 +50,8 @@ const styles = StyleSheet.create({
         width: '100%',
         padding: 16,
         backgroundColor: COLOR.ButtonGreen,
-        borderRadius: 6
+        borderRadius: 6,
+        flex: 1,
     },
     OrderInfo: {
         flex: 1,
@@ -66,12 +67,12 @@ const styles = StyleSheet.create({
         color: COLOR.GrayText,
     },
     ph_10: {
-        paddingHorizontal: 10
+        paddingHorizontal: 10,
     },
     PriceInfo: {
         minWidth: 90,
         padding: 5,
-        backgroundColor: COLOR.DarkGreen
+        backgroundColor: COLOR.DarkGreen,
     },
     PriceText: {
         fontStyle: 'normal',

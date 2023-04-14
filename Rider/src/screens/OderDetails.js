@@ -24,17 +24,24 @@ import Input from '../components/Input';
 import { Button } from '../components/Button';
 import { useNavigation } from '@react-navigation/native';
 import { SCREENS } from '../../App';
+import { useDispatch, useSelector } from 'react-redux';
+import { postClaimBottel } from '../store/slice/HomeSlices';
 const { width } = Dimensions.get('screen')
 
 
 
 const OderDetails = () => {
+    const dispatch = useDispatch()
     const navigation = useNavigation();
     const [modalVisible, setModalVisible] = useState(false);
     const [deliverymodalVisible, setdeliveryModalVisible] = useState(false);
     const [OrderConfirm, setOrderConfirm] = useState(false);
     const [OrderConfirmSure, setOrderConfirmSure] = useState(false);
-
+    const { OrderDetails } = useSelector((State) => State.Home)
+    const [BottelCount, setBottelCount] = useState({
+        '1 ltr Bottles': 0,
+        '1/2 ltr Bottles': 0
+    })
     // const handleConfirm = () => {
     //     if (!OrderConfirmSure) {
     //         setOrderConfirmSure(true)
@@ -52,16 +59,48 @@ const OderDetails = () => {
 
     const CLAIM = {
         "Cash to be Collected": () => <View style={styles.PriceTag}>
-            <Text style={styles.PriceText}>-Rs 1,000.14</Text>
+            <Text style={styles.PriceText}>Rs {OrderDetails.total}</Text>
         </View>,
         '1 ltr Bottles': (value) => <TouchableOpacity onPress={() => setModalVisible(true)} style={styles.BottleTag}>
-            <Text style={styles.BottleText}>12</Text>
+            <Text style={styles.BottleText}>{BottelCount['1 ltr Bottles']}</Text>
             <Text style={styles.BottleText}>Claim</Text>
         </TouchableOpacity>,
         '1/2 ltr Bottles': (value) => <TouchableOpacity onPress={() => setModalVisible(true)} style={styles.BottleTag}>
-            <Text style={styles.BottleText}>12</Text>
+            <Text style={styles.BottleText}>{BottelCount['1/2 ltr Bottles']}</Text>
             <Text style={styles.BottleText}>Claim</Text>
         </TouchableOpacity>,
+    }
+
+
+
+    const ClaimBottels = {
+        "claimedBottles": [
+            {
+                "_id": OrderDetails?._id,
+                "type": "1-liter-bottle",
+                "quantity": BottelCount['1 ltr Bottles']
+            },
+            {
+                "_id": OrderDetails?._id,
+                "type": "half-liter-bottle",
+                "quantity": BottelCount['1/2 ltr Bottles']
+            }
+        ]
+    }
+
+    const value = {
+        'Drop Off': 'Flat 123, Block 2332, Gulshan e iqbal, karachi 232132 NL : Sadequain Banqueut',
+        'Order #': OrderDetails?._id,
+        'Name': OrderDetails?.customer?.name,
+        'Contact Number': OrderDetails?.customer?.phone,
+        "Cash to be Collected": false,
+        '1 ltr Bottles': false,
+        '1/2 ltr Bottles': false,
+        'Special Instructions': 'qwd',
+    }
+
+    const getPostClaimBottel = () => {
+        dispatch(postClaimBottel(ClaimBottels))
     }
 
     return (
@@ -107,7 +146,14 @@ const OderDetails = () => {
                             </View>
                         </View>
                         <View style={styles.PriceInfo}>
-                            <Input ExtraStyle={{ width: 80 }} />
+                            <Input
+                                InputProps={{
+                                    value: BottelCount['1 ltr Bottles'],
+                                    placeholder: "0",
+                                    onChangeText: (value) => setBottelCount((pre) => ({ ...pre, '1 ltr Bottles': value })),
+                                    keyboardType: "numeric",
+                                }}
+                                ExtraStyle={{ width: 80 }} />
                         </View>
                     </View>
                     <View style={[styles.Row, { marginTop: 0 }]}>
@@ -117,11 +163,19 @@ const OderDetails = () => {
                             </View>
                         </View>
                         <View style={styles.PriceInfo}>
-                            <Input ExtraStyle={{ width: 80 }} />
+                            <Input
+                                InputProps={{
+                                    value: BottelCount['1/2 ltr Bottles'],
+                                    placeholder: "0",
+                                    onChangeText: (value) => setBottelCount((pre) => ({ ...pre, '1/2 ltr Bottles': value })),
+                                    keyboardType: "numeric",
+                                }}
+                                ExtraStyle={{ width: 80 }} />
                         </View>
                     </View>
                 </>}
                 {!OrderConfirm && <Button title='Click To Confirm' onPress={() => {
+                    getPostClaimBottel()
                     setOrderConfirm(true)
                     setTimeout(() => {
                         setOrderConfirm(false)
@@ -275,13 +329,3 @@ const styles = StyleSheet.create({
 export default OderDetails;
 
 
-const value = {
-    'Drop Off': 'Flat 123, Block 2332, Gulshan e iqbal, karachi 232132 NL : Sadequain Banqueut',
-    'Order #': '123548456888854123',
-    'Name': 'Shah Tamir Ahmed ahmed ad',
-    'Contact Number': '0308-5659898, 2135-5458585',
-    "Cash to be Collected": false,
-    '1 ltr Bottles': false,
-    '1/2 ltr Bottles': false,
-    'Special Instructions': 'qwd',
-}

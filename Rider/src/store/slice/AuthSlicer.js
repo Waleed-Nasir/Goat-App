@@ -102,7 +102,7 @@ export const AuthSlice = createSlice({
     saveAccessToken: (state, action) => {
       let payload = action.payload.data;
       state.accessToken = payload.user.token;//"Bearer " +
-      state.userID = payload.user.id;
+      state.userID = payload.user._id;
     },
     removeAccessToken: (state, action) => {
       state.accessToken = null;

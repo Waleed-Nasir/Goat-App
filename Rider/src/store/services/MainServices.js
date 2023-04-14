@@ -23,9 +23,50 @@ const OrderList = async (params = "") => {
   }
 };
 
+const OrderDetails = async (params = "") => {
+  const token = getAccessToken(Store.getState());
+  const onSuccess = ({ data }) => {
+    return data;
+  };
+
+  const onFailure = (error) => {
+    throw error;
+  };
+
+  try {
+    const result = await axios.post(API_URLS.BaseURL + API_URLS.ORDER_DETAILS, params, {
+      headers: { Authorization: "Bearer " + token },
+    });
+    return onSuccess(result);
+  } catch (error) {
+    return onFailure(error);
+  }
+};
+
+const OrderBottelClaim = async (params = "") => {
+  const token = getAccessToken(Store.getState());
+  const onSuccess = ({ data }) => {
+    return data;
+  };
+
+  const onFailure = (error) => {
+    throw error;
+  };
+
+  try {
+    const result = await axios.post(API_URLS.BaseURL + API_URLS.CLAIM_FILE, params, {
+      headers: { Authorization: "Bearer " + token },
+    });
+    return onSuccess(result);
+  } catch (error) {
+    return onFailure(error);
+  }
+};
 
 const MainService = {
   OrderList,
+  OrderDetails,
+  OrderBottelClaim
 };
 
 export default MainService;

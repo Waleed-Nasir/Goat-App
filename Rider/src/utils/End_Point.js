@@ -8,8 +8,9 @@ export const API_URLS = {
   UPDATED_PASSWORD: "password/reset", //########DONE##########//
 
   //HOME
-  HOME: "/orders/list/my", //########DONE##########//
-
+  HOME: "orders/list/my", //########DONE##########//
+  ORDER_DETAILS: "orders/details", //########DONE##########//
+  CLAIM_FILE: 'orders/edit-claim',
   //USER
   USER_DETAILS: "auth/user?token=", //USER ID   //######## DONE##########//
   UPDATE_PROFILE: "front/users/update/", //USER ID  //########--------------DONE-------------##########//
