@@ -3,9 +3,15 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import persistReducer from "redux-persist/es/persistReducer";
 import thunk from "redux-thunk";
 import AuthReducer from './slice/AuthSlicer';
+import LoaderSlice from "./slice/LoaderSlice";
+import { UserSlice } from "./slice/UserSlices";
+import { HomeSlice } from "./slice/HomeSlices";
 
 const reducers = combineReducers({
-  Auth: AuthReducer, 
+  Auth: AuthReducer,
+  Loader: LoaderSlice,
+  User: UserSlice,
+  Home: HomeSlice
 });
 
 const persistConfig = {

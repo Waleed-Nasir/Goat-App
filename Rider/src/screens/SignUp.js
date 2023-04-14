@@ -6,8 +6,8 @@
  * @flow strict-local
  */
 
-import {useNavigation} from '@react-navigation/native';
-import React from 'react';
+import { useNavigation } from '@react-navigation/native';
+import React, { useEffect, useState } from 'react';
 import {
   Dimensions,
   Image,
@@ -18,16 +18,50 @@ import {
   KeyboardAvoidingView,
   ScrollView,
 } from 'react-native';
-import {SCREENS} from '../../App';
-import {COLOR} from '../assets/colors';
-import {FONTFAMILY} from '../assets/fonts';
-import {Assets} from '../assets/images';
-import {Button} from '../components/Button';
+import { SCREENS } from '../../App';
+import { COLOR } from '../assets/colors';
+import { FONTFAMILY } from '../assets/fonts';
+import { Assets } from '../assets/images';
+import { Button } from '../components/Button';
 import Input from '../components/Input';
-const {width} = Dimensions.get('screen');
+import { useDispatch, useSelector } from 'react-redux';
+import { MessageShow, Validator } from '../utils/Constant';
+import { register } from '../store/slice/AuthSlicer';
+const { width } = Dimensions.get('screen');
 
 const SingUp = () => {
   const navigation = useNavigation();
+  const [email, setEmail] = useState(__DEV__ ? "Test@User.com" : "");
+  const [password, setpassword] = useState(__DEV__ ? "12345678" : "");
+  const [ConfirmPassword, setConfirmPassword] = useState(__DEV__ ? "12345678" : "");
+  const [name, setname] = useState(__DEV__ ? "Test User" : "");
+  const [phone, setphone] = useState(__DEV__ ? "+9231234354" : "");
+  const [ShowPassword, setShowPassword] = useState(false);
+  const dispatch = useDispatch();
+  const AccessToken = useSelector((state) => state.Auth.accessToken);
+
+
+  const SignUp = () => {
+    let params = { name, email, password, phone };
+    const isValid = Validator(params);
+    if (isValid) {
+      if (ConfirmPassword === password) {
+        dispatch(register(params));
+      } else {
+        MessageShow('error', `Password doesn't match`)
+      }
+      //  navigation.replace(SCREENS.Home)
+    }
+  };
+
+  useEffect(() => {
+    if (AccessToken) {
+      navigation.reset({
+        index: 0,
+        routes: [{ name: SCREENS.Deliveries }],
+      });
+    }
+  }, [AccessToken]);
 
   return (
     <View style={styles.SingUp}>
@@ -55,19 +89,51 @@ const SingUp = () => {
                 alignItems: 'center',
               }}>
               <Text style={styles.SubText}>Please Enter Your Information</Text>
-              <Input SectionStyle={{marginTop: 8}} placeholder="Full Name" />
-              <Input SectionStyle={{marginTop: 8}} placeholder="Email" />
-              <Input SectionStyle={{marginTop: 8}} placeholder="Password" />
+              <Input SectionStyle={{ marginTop: 8 }} InputProps={{
+                value: name,
+                placeholder: "Full Name",
+                onChangeText: setname,
+              }} />
+              <Input SectionStyle={{ marginTop: 8 }} InputProps={{
+                value: email,
+                placeholder: "Example@mail.com",
+                onChangeText: setEmail,
+              }} />
+              <Input SectionStyle={{ marginTop: 8 }} placeholder="Password"
+                rightIcon={ShowPassword ? Assets.EyeGray : Assets.EyeSlashGray}
+                IconPress={() => {
+                  setShowPassword(!ShowPassword);
+                }}
+                InputProps={{
+                  value: password,
+                  secureTextEntry: !ShowPassword,
+                  onChangeText: setpassword,
+                }} />
               <Input
-                SectionStyle={{marginTop: 8}}
+                SectionStyle={{ marginTop: 8 }}
                 placeholder="Confirm Password"
+                rightIcon={ShowPassword ? Assets.EyeGray : Assets.EyeSlashGray}
+                IconPress={() => {
+                  setShowPassword(!ShowPassword);
+                }}
+                InputProps={{
+                  value: ConfirmPassword,
+                  secureTextEntry: !ShowPassword,
+                  onChangeText: setConfirmPassword,
+                }}
               />
-              <Input SectionStyle={{marginTop: 8}} placeholder="Phone" />
+              <Input SectionStyle={{ marginTop: 8 }} InputProps={{
+                value: phone,
+                placeholder: "+123456789",
+                onChangeText: setphone,
+                keyboardType: "name-phone-pad",
+              }} />
               <View style={styles.Extra} />
               <Button
                 title="Create Account"
                 onPress={() => {
-                  navigation.navigate(SCREENS.Deliveries);
+                  SignUp()
+
                 }}
               />
             </View>

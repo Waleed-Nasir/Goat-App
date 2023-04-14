@@ -4,10 +4,7 @@ import { API_URLS } from "../../utils/End_Point";
 import { getAccessToken } from "../slice/AuthSlicer";
 
 const login = async (params) => {
-  const formData = new FormData();
-  formData.append("email", params.email);
-  formData.append("password", params.password);
-
+  let data = JSON.stringify(params);
   const onSuccess = ({ data }) => {
     return data;
   };
@@ -19,13 +16,14 @@ const login = async (params) => {
   try {
     const result = await axios.post(
       API_URLS.BaseURL + API_URLS.LOGIN,
-      formData,
+      data,
       {
         headers: {
-          "Content-Type": "multipart/form-data",
+          'Content-Type': 'application/json'
         },
       }
     );
+    console.log(result)
     return onSuccess(result);
   } catch (error) {
     return onFailure(error);
@@ -33,12 +31,7 @@ const login = async (params) => {
 };
 
 const register = async (params) => {
-  const formData = new FormData();
-  formData.append("name", params.name);
-  formData.append("email", params.email);
-  formData.append("phone", params.phone);
-  formData.append("password", params.password);
-
+  let data = JSON.stringify(params);
   const onSuccess = ({ data }) => {
     return data;
   };
@@ -50,10 +43,10 @@ const register = async (params) => {
   try {
     const result = await axios.post(
       API_URLS.BaseURL + API_URLS.REGISTER,
-      formData,
+      data,
       {
         headers: {
-          "Content-Type": "multipart/form-data",
+          'Content-Type': 'application/json'
         },
       }
     );

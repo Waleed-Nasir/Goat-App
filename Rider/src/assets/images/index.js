@@ -14,7 +14,11 @@ import SignInTopBG from './SignInTopBG.png'
 
 import MiniMap from './Map/MiniMap.png'
 import FullMap from './Map/FullMap.png'
+import EyeSlash from './Icons/eye-slash.png';
 
+import EyeSlashGray from './Icons/EyeSlashGray.png';
+import Eye from "./Icons/Eye.png";
+import EyeGray from "./Icons/Eye-Gray.png";
 export const Assets = {
     Done,
     Hostory,
@@ -30,5 +34,9 @@ export const Assets = {
     SignUpTopBG,
     SignInTopBG,
     MiniMap,
-    FullMap
+    FullMap,
+    EyeSlash,
+    EyeSlashGray,
+    Eye,
+    EyeGray
 }

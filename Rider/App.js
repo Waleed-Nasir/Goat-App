@@ -8,14 +8,14 @@
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { SafeAreaView, StyleSheet, useColorScheme } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { PersistGate } from "redux-persist/integration/react";
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import Deliveries from './src/screens/Deliveries';
 import Home from './src/screens/Home';
-import { Provider } from 'react-redux'
+import { Provider, useDispatch, useSelector } from 'react-redux'
 import MapView from './src/screens/MapView';
 import OderDetails from './src/screens/OderDetails';
 import Reason from './src/screens/Reason';
@@ -30,6 +30,9 @@ import toastConfig from './src/utils/ToastConfig';
 import { Toast } from 'react-native-toast-message/lib/src/Toast';
 import { Store } from './src/store/store';
 import persistStore from 'redux-persist/es/persistStore';
+import LoaderModal from './src/components/LoaderModal';
+import { getUserData } from './src/store/slice/UserSlices';
+import {  getOrderList } from './src/store/slice/HomeSlices';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -59,36 +62,56 @@ const TAB = () => (
     <Stack.Screen name={SCREENS.Profile} component={Profile} />
   </Tab.Navigator>
 );
-const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+const AppMain = () => {
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-  const persistor = persistStore(Store);
+  const dispatch = useDispatch();
+  const { accessToken, userID } = useSelector((state) => state.Auth);
+  const STATE = useSelector((state) => state);
+  useEffect(() => {
+    // alert(accessToken);
+    if (accessToken) {
+      // dispatch(getCategories());
+      dispatch(getUserData());
+      dispatch(getOrderList());
+    }
+  }, [accessToken]);
+
+
   return (
-    <Provider store={Store}>
-       <PersistGate loading={null} persistor={persistor}>
-      <NavigationContainer>
-        <Stack.Navigator
-          screenOptions={{
-            headerShown: false,
-            gestureEnabled: false,
-          }}
-          initialRouteName={SCREENS.Splash}>
-          <Stack.Screen name={SCREENS.Splash} component={Splash} />
-          <Stack.Screen name={SCREENS.Welcome} component={Welcome} />
-          <Stack.Screen name={SCREENS.SingIn} component={SingIn} />
-          <Stack.Screen name={SCREENS.SingUp} component={SingUp} />
-          <Stack.Screen name={SCREENS.Deliveries} component={TAB} />
-        </Stack.Navigator>
-        <Toast config={toastConfig} />
-      </NavigationContainer>
-      </PersistGate>
-    </Provider>
+
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+          gestureEnabled: false,
+        }}
+        initialRouteName={SCREENS.Splash}>
+        <Stack.Screen name={SCREENS.Splash} component={Splash} />
+        <Stack.Screen name={SCREENS.Welcome} component={Welcome} />
+        <Stack.Screen name={SCREENS.SingIn} component={SingIn} />
+        <Stack.Screen name={SCREENS.SingUp} component={SingUp} />
+        <Stack.Screen name={SCREENS.Deliveries} component={TAB} />
+      </Stack.Navigator>
+      <Toast config={toastConfig} />
+      <LoaderModal visibility={false} />
+    </NavigationContainer>
+
   );
 };
 
 const styles = StyleSheet.create({});
+
+
+const App = () => {
+  const persistor = persistStore(Store);
+  return (
+    <Provider store={Store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <AppMain />
+      </PersistGate>
+    </Provider>
+  )
+}
+
 
 export default App;

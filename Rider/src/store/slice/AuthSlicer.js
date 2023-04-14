@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { MessageShow, showResponseError } from "../../utils/Constant";
-// import { loaderVisibility } from "./LoaderSlice";
+import { loaderVisibility } from "./LoaderSlice";
 import AuthService from "../services/AuthServices";
 
 const initialState = {
@@ -12,15 +12,15 @@ const initialState = {
 
 export const login = createAsyncThunk("login", async (body, thunk) => {
   try {
-    // thunk.dispatch(loaderVisibility(true));
+    thunk.dispatch(loaderVisibility(true));
     const response = await AuthService.login(body);
     console.log(response, "response");
     thunk.dispatch(AuthSlice.actions.saveAccessToken(response));
     MessageShow("success", "Success", response.message);
-    // thunk.dispatch(loaderVisibility(false));
+    thunk.dispatch(loaderVisibility(false));
     return thunk.fulfillWithValue(response);
   } catch (error) {
-    // thunk.dispatch(loaderVisibility(false));
+    thunk.dispatch(loaderVisibility(false));
     let err = MessageShow("error", "Error", showResponseError(error));
     return thunk.rejectWithValue(err);
   }
@@ -28,29 +28,29 @@ export const login = createAsyncThunk("login", async (body, thunk) => {
 
 export const register = createAsyncThunk("register", async (body, thunk) => {
   try {
-    // thunk.dispatch(loaderVisibility(true));
+    thunk.dispatch(loaderVisibility(true));
     const response = await AuthService.register(body);
     console.log(response, "response");
     thunk.dispatch(AuthSlice.actions.saveAccessToken(response));
     MessageShow("success", "Success", response.message);
-    // thunk.dispatch(loaderVisibility(false));
+    thunk.dispatch(loaderVisibility(false));
     return thunk.fulfillWithValue(response);
   } catch (error) {
-    // thunk.dispatch(loaderVisibility(false));
+    thunk.dispatch(loaderVisibility(false));
     let err = MessageShow("error", "Error", showResponseError(error));
     return thunk.rejectWithValue(err);
   }
 });
 export const forgot = createAsyncThunk("forgot", async (body, thunk) => {
   try {
-    // thunk.dispatch(loaderVisibility(true));
+    thunk.dispatch(loaderVisibility(true));
     const response = await AuthService.forgot(body);
     thunk.dispatch(AuthSlice.actions.setResetScreen(body.email));
     MessageShow("success", "Success", response.msg);
-    // thunk.dispatch(loaderVisibility(false));
+    thunk.dispatch(loaderVisibility(false));
     return thunk.fulfillWithValue(response);
   } catch (error) {
-    // thunk.dispatch(loaderVisibility(false));
+    thunk.dispatch(loaderVisibility(false));
     console.log(error, "error");
     let err = MessageShow("error", "Error", showResponseError(error));
     return thunk.rejectWithValue(err);
@@ -60,14 +60,14 @@ export const updatePassword = createAsyncThunk(
   "updatePassword",
   async (body, thunk) => {
     try {
-      // thunk.dispatch(loaderVisibility(true));
+      thunk.dispatch(loaderVisibility(true));
       const response = await AuthService.updatePassword(body);
       thunk.dispatch(AuthSlice.actions.setPasswordUpdated(true));
       MessageShow("success", "Success", response.msg);
-      // thunk.dispatch(loaderVisibility(false));
+      thunk.dispatch(loaderVisibility(false));
       return thunk.fulfillWithValue(response);
     } catch (error) {
-      // thunk.dispatch(loaderVisibility(false));
+      thunk.dispatch(loaderVisibility(false));
       console.log(error, "error");
       let err = MessageShow("error", "Error", showResponseError(error));
       return thunk.rejectWithValue(err);
@@ -79,15 +79,15 @@ export const DeleteAccount = createAsyncThunk(
   "DeleteAccount",
   async (body, thunk) => {
     try {
-      // thunk.dispatch(loaderVisibility(true));
+      thunk.dispatch(loaderVisibility(true));
       const response = await AuthService.deleteAccount(body.ID);
       body?.CallBack();
       thunk.dispatch(AuthSlice.actions.removeAccessToken());
       MessageShow("success", "Success", response.msg);
-      // thunk.dispatch(loaderVisibility(false));
+      thunk.dispatch(loaderVisibility(false));
       return thunk.fulfillWithValue(response);
     } catch (error) {
-      // thunk.dispatch(loaderVisibility(false));
+      thunk.dispatch(loaderVisibility(false));
       console.log(error, "error");
       let err = MessageShow("error", "Error", showResponseError(error));
       return thunk.rejectWithValue(err);
@@ -100,9 +100,9 @@ export const AuthSlice = createSlice({
   initialState,
   reducers: {
     saveAccessToken: (state, action) => {
-      let payload = action.payload;
-      state.accessToken = "Bearer " + payload.token;
-      state.userID = payload.data.id;
+      let payload = action.payload.data;
+      state.accessToken = payload.user.token;//"Bearer " +
+      state.userID = payload.user.id;
     },
     removeAccessToken: (state, action) => {
       state.accessToken = null;

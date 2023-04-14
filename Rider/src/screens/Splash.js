@@ -16,17 +16,28 @@ import {
 } from 'react-native';
 import { SCREENS } from '../../App';
 import { Assets } from '../assets/images';
+import { useSelector } from 'react-redux';
 const { width } = Dimensions.get('screen')
 
 
 
 const Splash = () => {
     const navigation = useNavigation();
+    const AccessToken = useSelector((state) => state.Auth.accessToken);
+
     useEffect(() => {
         setTimeout(() => {
-            navigation.replace(SCREENS.Welcome);
-        }, 2000);
+            if (AccessToken) {
+                navigation.reset({
+                    index: 0,
+                    routes: [{ name: SCREENS.Deliveries }],
+                });
+            } else {
+                navigation.replace(SCREENS.Welcome);
+            }
+        }, 3000);
     }, []);
+
     return (
         <View style={styles.Splash}>
             <ImageBackground source={Assets.BG} resizeMode={'stretch'} style={styles.Center}>

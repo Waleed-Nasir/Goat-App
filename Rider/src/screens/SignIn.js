@@ -6,8 +6,8 @@
  * @flow strict-local
  */
 
-import {useNavigation} from '@react-navigation/native';
-import React from 'react';
+import { useNavigation } from '@react-navigation/native';
+import React, { useEffect, useState } from 'react';
 import {
   Dimensions,
   Image,
@@ -18,17 +18,41 @@ import {
   KeyboardAvoidingView,
   ScrollView,
 } from 'react-native';
-import {SCREENS} from '../../App';
-import {COLOR} from '../assets/colors';
-import {FONTFAMILY} from '../assets/fonts';
-import {Assets} from '../assets/images';
-import {Button} from '../components/Button';
+import { SCREENS } from '../../App';
+import { COLOR } from '../assets/colors';
+import { FONTFAMILY } from '../assets/fonts';
+import { Assets } from '../assets/images';
+import { Button } from '../components/Button';
 import Input from '../components/Input';
-const {width} = Dimensions.get('screen');
+import { Validator } from '../utils/Constant';
+import { useDispatch, useSelector } from 'react-redux';
+import { login } from '../store/slice/AuthSlicer';
+const { width } = Dimensions.get('screen');
 
 const SingIn = () => {
   const navigation = useNavigation();
+  const dispatch = useDispatch();
+  const [email, setEmail] = useState(__DEV__ ? "test2@test.com" : "");
+  const [password, setpassword] = useState(__DEV__ ? "12345678" : "");
+  const [ShowPassword, setShowPassword] = useState(false);
+  const AccessToken = useSelector((state) => state.Auth.accessToken);
 
+  const SignIn = () => {
+    let params = { email, password };
+    const isValid = Validator(params);
+    if (isValid) {
+      dispatch(login(params));
+    }
+  };
+
+  useEffect(() => {
+    if (AccessToken) {
+      navigation.reset({
+        index: 0,
+        routes: [{ name: SCREENS.Deliveries }],
+      });
+    }
+  }, [AccessToken]);
   return (
     <View style={styles.SingIn}>
       <ImageBackground
@@ -38,17 +62,34 @@ const SingIn = () => {
         <Image source={Assets.LogoSmall} style={styles.Logo} />
       </ImageBackground>
       <ScrollView
-        style={{flex: 1, backgroundColor: COLOR.White}}
-        contentContainerStyle={{flexGrow: 1}}>
+        style={{ flex: 1, backgroundColor: COLOR.White }}
+        contentContainerStyle={{ flexGrow: 1 }}>
         <KeyboardAvoidingView
-          style={{flex: 1}}
+          style={{ flex: 1 }}
           keyboardVerticalOffset={100}
           behavior={'position'}>
           <View style={styles.Main}>
             <Text style={styles.Heading}>Sing In</Text>
             <Text style={styles.SubText}>Welcome back, We missed you.</Text>
-            <Input placeholder="Email" />
-            <Input placeholder="Password" />
+            <Input
+              InputProps={{
+                value: email,
+                placeholder: "Example@mail.com",
+                onChangeText: setEmail,
+              }}
+            />
+            <Input placeholder="Password"
+              rightIcon={ShowPassword ? Assets.EyeGray : Assets.EyeSlashGray}
+              IconPress={() => {
+                setShowPassword(!ShowPassword);
+              }}
+              InputProps={{
+                value: password,
+                secureTextEntry: !ShowPassword,
+                placeholder: "********",
+                onChangeText: setpassword,
+              }}
+            />
             <View style={styles.Message}>
               {/* <Text style={styles.Error}>Email or password is incorrect.</Text> */}
               <Text style={styles.MiniText}>Forget password</Text>
@@ -56,7 +97,8 @@ const SingIn = () => {
             <Button
               title="Sign in"
               onPress={() => {
-                navigation.navigate(SCREENS.Deliveries);
+                SignIn()
+
               }}
             />
           </View>

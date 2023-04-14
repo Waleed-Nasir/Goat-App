@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Dimensions, Image, Platform, StyleSheet,
+    Dimensions, Image, Platform, Pressable, StyleSheet,
     Text, TextInput, View
 } from 'react-native';
 import { COLOR } from '../assets/colors';
@@ -16,10 +16,10 @@ const Input = ({
     SectionStyle = {},
     InputProps = {},
     IconPress = () => { },
-    ExtraStyle={}
+    ExtraStyle = {}
 }) => {
     return (
-        <View style={[styles.Input,ExtraStyle]}>
+        <View style={[styles.Input, ExtraStyle]}>
             {/* <Text style={[styles.label, LableStyle]}>{label}</Text> */}
             <View style={[styles.SectionStyle, SectionStyle]}>
                 {leftIcon ? (
@@ -32,13 +32,10 @@ const Input = ({
                     placeholderTextColor={COLOR.INPUT_PLACEHOLDE}
                     {...InputProps}
                 />
-                {rightIcon ? (null
-                    //   <ICON
-                    //     onPress={IconPress}
-                    //     icon={rightIcon}
-                    //     style={[styles.ImageStyle, {marginHorizontal: 5}]}
-                    //     bg={'theme.0'}
-                    //   />
+                {rightIcon ? (
+                    <Pressable onPress={IconPress}>
+                        <Image source={rightIcon} style={[styles.ImageStyle, { marginRight: 0 }]} />
+                    </Pressable>
                 ) : null}
             </View>
         </View>
@@ -58,7 +55,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: COLOR.DarkGreen,
         borderRadius: 6,
-        paddingHorizontal:16
+        paddingHorizontal: 16
     },
     ImageStyle: {
         padding: 8,

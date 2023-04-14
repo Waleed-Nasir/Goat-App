@@ -21,6 +21,7 @@ import Item from '../components/Item';
 import Tabs from '../components/Tabs';
 import Layout from '../Layout';
 import Header from './Header';
+import { useSelector } from 'react-redux';
 const { width } = Dimensions.get('screen')
 
 
@@ -52,7 +53,8 @@ const Orders = {
 const Deliveries = () => {
     const [current, handleSelction] = useState(0)
     const navigation = useNavigation();
-
+    const OrderList = useSelector((State)=>State)
+    console.log(OrderList)
     return (
         <Layout
             Header={() => <Header />}
