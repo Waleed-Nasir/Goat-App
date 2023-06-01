@@ -1,0 +1,922 @@
+[
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_homebanner.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_homebanner.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_settingarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_settingarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_minigoat.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_minigoat.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_signup.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_signup.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_forwardarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_forwardarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.awesomeproject.app-main-34:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_reviewdownarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_reviewdownarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_redem.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_redem.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_map_minimap.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_map_minimap.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_back.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_back.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_location.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_location.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_signintopbg.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_signintopbg.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_logosmall.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_logosmall.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_envelope.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_envelope.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_tabicons_goat_tabuser.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_tabicons_goat_tabuser.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_signintopbg.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_signintopbg.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_tracklocation.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_tracklocation.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_tabicons_goat_tabhome.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_tabicons_goat_tabhome.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goorders.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goorders.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_circlehome.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_circlehome.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goorders.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goorders.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_c_plus.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_c_plus.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.awesomeproject.app-main-34:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_home.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_home.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_trackorderway.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_trackorderway.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_calendar.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_calendar.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_tabicons_goat_tabbucket.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_tabicons_goat_tabbucket.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_c_dash.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_c_dash.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_milk.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_milk.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_settinggear.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_settinggear.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_checkx.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_checkx.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_add.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_add.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_map_minimap.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_map_minimap.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_dateselectdownarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_dateselectdownarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_done.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_done.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.awesomeproject.app-main-34:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_addtag.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_addtag.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_settinguserpp.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_settinguserpp.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_trackorderway.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_trackorderway.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_searchicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_searchicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_scan.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_scan.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_bottle.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_bottle.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_redem.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_redem.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_goat.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_goat.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_filter.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_filter.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_signintopbg.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_signintopbg.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_addtocard.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_addtocard.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_minigoat.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_minigoat.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_forwardarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_forwardarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_farm.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_farm.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_signuptopbg.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_signuptopbg.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_meat.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_meat.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_reviewdownarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_reviewdownarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_mapicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_mapicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_bg.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_bg.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_downpoly.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_downpoly.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_tabicons_goat_tabheart.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_tabicons_goat_tabheart.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_add.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_add.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_heart.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_heart.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_settingorder.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_settingorder.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_fillheart.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_fillheart.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_c_dash.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_c_dash.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_circlepin.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_circlepin.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_settinguserpp.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_settinguserpp.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_done.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_done.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_listpreview.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_listpreview.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_downarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_downarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_reviewdownarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_reviewdownarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_bg.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_bg.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_milk.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_milk.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_circleplus.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_circleplus.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_reviewreport.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_reviewreport.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_filter.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_filter.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.awesomeproject.app-main-34:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_forwardarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_forwardarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_milksheet.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_milksheet.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_meat.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_meat.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_settingarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_settingarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_user.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_user.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_downpoly.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_downpoly.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_circleplus.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_circleplus.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_downpoly.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_downpoly.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_tabicons_goat_tabheart.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_tabicons_goat_tabheart.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_visa.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_visa.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_signuptopbg.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_signuptopbg.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_plus.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_plus.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_redem.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_redem.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_settinguserpp.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_settinguserpp.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_circlejob.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_circlejob.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_plus.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_plus.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_done.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_done.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_visa.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_visa.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_goat.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_goat.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_scan.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_scan.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_logosmall.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_logosmall.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_tabicons_goat_tabuser.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_tabicons_goat_tabuser.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_trackconfirm.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_trackconfirm.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_circlejob.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_circlejob.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_calendar.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_calendar.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_addtocard.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_addtocard.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_crossgreen.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_crossgreen.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_trackorderend.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_trackorderend.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_logomini.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_logomini.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_downarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_downarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_tracklocation.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_tracklocation.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_addtag.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_addtag.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_reviewreport.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_reviewreport.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_reviewlike.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_reviewlike.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_minigoat.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_minigoat.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_reviewlike.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_reviewlike.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_map_minimap.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_map_minimap.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_circlepencil.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_circlepencil.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_crossgreen.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_crossgreen.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_tabicons_goat_tabheart.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_tabicons_goat_tabheart.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_crossgreen.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_crossgreen.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_mapicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_mapicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_visa.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_visa.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_addtag.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_addtag.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_tracklocation.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_tracklocation.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_dateselectdownarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_dateselectdownarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.awesomeproject.app-main-34:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_scan.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_scan.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_reviewlike.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_reviewlike.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_c_dash.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_c_dash.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_trackorderway.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_trackorderway.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_calendar.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_calendar.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_trackorderend.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_trackorderend.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_map_fullmap.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_map_fullmap.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_homebanner.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_homebanner.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_home.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_home.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_settingorder.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_settingorder.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_filter.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_filter.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_trackconfirm.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_trackconfirm.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_farm.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_farm.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_back.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_back.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_hostory.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_hostory.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_trackorderend.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_trackorderend.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_trackconfirm.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_trackconfirm.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_listpreview.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_listpreview.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_circlehome.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_circlehome.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_settingorder.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_settingorder.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_location.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_location.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_logosmall.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_logosmall.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_heart.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_heart.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_heart.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_heart.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_goat.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_goat.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_circlepin.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_circlepin.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_settingarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_settingarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_circleplus.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_circleplus.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_fillheart.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_fillheart.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_circlehome.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_circlehome.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_logomini.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_logomini.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_homebanner.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_homebanner.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_settinggear.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_settinggear.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_tabicons_goat_tabhome.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_tabicons_goat_tabhome.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_plus.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_plus.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goorders.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goorders.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_sorticon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_sorticon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_signup.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_signup.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_settinggear.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_settinggear.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_wallet.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_wallet.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_tabicons_goat_tabbucket.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_tabicons_goat_tabbucket.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_mapicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_mapicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_listpreview.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_listpreview.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_home.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_home.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_c_plus.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_c_plus.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_fillheart.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_fillheart.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_add.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_add.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_location.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_location.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_searchicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_searchicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_logo.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_logo.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.awesomeproject.app-main-34:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_milk.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_milk.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_back.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_back.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_sorticon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_sorticon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_circlepin.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_circlepin.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_logomini.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_logomini.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_addtocard.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_addtocard.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_reviewreport.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_reviewreport.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_settingmap.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_settingmap.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.awesomeproject.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_circlepencil.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_circlepencil.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_searchicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_searchicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_logo.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_logo.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_wallet.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_wallet.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_user.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_user.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_signuptopbg.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_signuptopbg.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_sorticon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_sorticon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_downarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_downarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_envelope.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_envelope.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_logo.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_logo.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_bg.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_bg.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_hostory.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_hostory.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_map_fullmap.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_map_fullmap.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_circlejob.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_circlejob.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_tabicons_goat_tabbucket.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_tabicons_goat_tabbucket.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_c_plus.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_c_plus.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_bottle.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_bottle.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_minibottle.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_minibottle.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.awesomeproject.app-main-34:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_settingmap.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_settingmap.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_envelope.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_envelope.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_milksheet.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_milksheet.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_map_fullmap.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_map_fullmap.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_signup.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_signup.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_minibottle.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_minibottle.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_tabicons_goat_tabhome.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_tabicons_goat_tabhome.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.awesomeproject.app-main-34:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_circlepencil.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_circlepencil.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_milksheet.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_milksheet.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_tabicons_goat_tabuser.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_tabicons_goat_tabuser.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-mdpi_src_assets_images_goatimages_goat_settingmap.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-mdpi/src_assets_images_goatimages_goat_settingmap.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.awesomeproject.app-main-34:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_minibottle.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_minibottle.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_user.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_user.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_meat.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_meat.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_checkx.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_checkx.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_wallet.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_wallet.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_dateselectdownarrow.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_dateselectdownarrow.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_goatimages_goat_farm.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_goatimages_goat_farm.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xhdpi_src_assets_images_checkx.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xhdpi/src_assets_images_checkx.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_hostory.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_hostory.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/drawable-xxhdpi_src_assets_images_goatimages_goat_bottle.png.flat",
+        "source": "com.awesomeproject.app-react-28:/drawable-xxhdpi/src_assets_images_goatimages_goat_bottle.png"
+    },
+    {
+        "merged": "com.awesomeproject.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.awesomeproject.app-main-34:/mipmap-mdpi/ic_launcher_round.png"
+    }
+]
