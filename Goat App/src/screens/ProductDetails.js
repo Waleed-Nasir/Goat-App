@@ -36,7 +36,11 @@ import Reviews from "../components/Reviews";
 import ReviewPager from "../components/ReviewPager";
 import { useDispatch, useSelector } from "react-redux";
 import { getPlaceOrder } from "../Store/slice/HomeSlices";
-import { getOneClikedBuy, handleCartProduct, handleFavProduct } from "../Store/slice/UserLocal";
+import {
+  getOneClikedBuy,
+  handleCartProduct,
+  handleFavProduct,
+} from "../Store/slice/UserLocal";
 import { functionAdder, functionFinder } from "../utils/Constant";
 
 const ProductDetails = () => {
@@ -71,7 +75,7 @@ const ProductDetails = () => {
           <Pressable
             style={styles.button}
             onPress={() => {
-              dispatch(getOneClikedBuy(OrderData));
+              dispatch(getOneClikedBuy({ ...product, OrderData }));
               navigation.navigate(SCREENS.CheckOut);
             }}
           >

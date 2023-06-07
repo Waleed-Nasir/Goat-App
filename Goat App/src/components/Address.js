@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import {
   Dimensions,
   Image,
@@ -14,42 +14,53 @@ import {
   StyleSheet,
   Text,
   View,
-} from 'react-native';
-import {COLOR} from '../assets/colors';
-import {Assets} from '../assets/images';
-const {width} = Dimensions.get('screen');
+} from "react-native";
+import { useSelector } from "react-redux";
+import { COLOR } from "../assets/colors";
+import { Assets } from "../assets/images";
+const { width } = Dimensions.get("screen");
 
 const Address = ({
   isMapShow = false,
   leftIcon = Assets.Goat_DownPoly,
   LeftPress = () => {},
   H = 2,
+  Street = "",
+  House = "",
+  Nearest = "",
+  City = "",
 }) => {
   return (
     <View style={styles.AddressView}>
       {isMapShow ? (
-        <View style={[styles.AddressMap, {height: width / H}]}>
+        <View style={[styles.AddressMap, { height: width / H }]}>
           <Image source={Assets.Goat_MapIcon} />
         </View>
       ) : null}
       <View style={styles.Row}>
         <Image
-          resizeMode={'center'}
+          resizeMode={"center"}
           source={Assets.Goat_CirclePin}
           style={styles.Icon}
         />
         <View style={styles.Divier} />
-        <View style={{flex: 1}}>
-          <Text style={[styles.AddressText]}>Address Title</Text>
+        {/* {LocalAddress?.map(() => (
+       
+        ))} */}
+        <View style={{ flex: 1 }}>
+          <Text style={[styles.AddressText]}>
+            {Street}
+            {House}
+          </Text>
           <Text style={[styles.AddressDText]}>
-            Detailed address will show here..
+            {Nearest} {City}
           </Text>
         </View>
         {leftIcon ? (
           <Pressable onPress={LeftPress}>
             <Image
               style={styles.Icon}
-              resizeMode={'center'}
+              resizeMode={"center"}
               source={leftIcon}
               borderRadius={100}
             />
@@ -63,45 +74,45 @@ const Address = ({
 const styles = StyleSheet.create({
   AddressView: {
     backgroundColor: COLOR.ButtonGreen,
-    width: '100%',
+    width: "100%",
     paddingVertical: 10,
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    justifyContent: "space-between",
+    alignItems: "center",
     borderRadius: 6,
     paddingHorizontal: 10,
     marginBottom: 20,
   },
   AddressMap: {
-    width: '100%',
+    width: "100%",
     backgroundColor: COLOR.White,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     marginBottom: 30,
     borderRadius: 6,
   },
   AddressText: {
-    fontStyle: 'normal',
-    fontWeight: '600',
+    fontStyle: "normal",
+    fontWeight: "600",
     fontSize: 18,
     lineHeight: 24,
     color: COLOR.Black,
   },
   AddressDText: {
-    fontStyle: 'normal',
-    fontWeight: '600',
+    fontStyle: "normal",
+    fontWeight: "600",
     fontSize: 10,
     lineHeight: 18,
     color: COLOR.Black,
   },
   Row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     paddingHorizontal: 10,
   },
   Divier: {
     width: 1,
-    height: '80%',
+    height: "80%",
     marginHorizontal: 20,
     backgroundColor: COLOR.GrayText,
   },

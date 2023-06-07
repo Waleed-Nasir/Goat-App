@@ -48,8 +48,9 @@ export const getPlaceOrder = createAsyncThunk(
   async (body, thunk) => {
     try {
       thunk.dispatch(loaderVisibility(true));
-      const response = await MainService.PlaceOrder(body);
+      const response = await MainService.PlaceOrder(body.data);
       MessageShow("success", response.message);
+      body?.CallBacK()
       thunk.dispatch(loaderVisibility(false));
       return thunk.fulfillWithValue(response);
     } catch (error) {

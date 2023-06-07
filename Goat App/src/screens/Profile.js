@@ -9,7 +9,7 @@
 import { useNavigation } from "@react-navigation/native";
 import React, { useState } from "react";
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { COLOR } from "../assets/colors";
 import { Assets } from "../assets/images";
 import { Button } from "../components/Button";
@@ -22,6 +22,7 @@ const { width } = Dimensions.get("screen");
 const Profile = () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
+
   return (
     <Layout Header={() => <Header showSlider={false} />}>
       <View style={[styles.Row, styles.MT_40, styles.padding20]}>

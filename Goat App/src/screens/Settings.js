@@ -16,7 +16,7 @@ import {
   Text,
   View,
 } from "react-native";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { SCREENS } from "../../App";
 import { COLOR } from "../assets/colors";
 import { Assets } from "../assets/images";
@@ -37,7 +37,9 @@ const Settings = () => {
   const [CurrentIndex, setCurrentIndex] = useState(0);
   const navigation = useNavigation();
   const dispatch = useDispatch();
+  const { USER_DATA } = useSelector((state) => state.User);
 
+  
   const data = [
     {
       title: "Manage Schedule",
@@ -50,7 +52,7 @@ const Settings = () => {
       subText: "Previous order history",
       icon: Assets.Goat_SettingOrder,
       route: "MyOrders",
-      callback: () => { 
+      callback: () => {
         dispatch(getOrders);
       },
     },
@@ -95,18 +97,21 @@ const Settings = () => {
             resizeMode={"contain"}
           />
         </View>
-        <Text style={styles.centerText}>John Smith</Text>
+        <Text style={styles.centerText}>{USER_DATA?.name}</Text>
         <View style={[styles.Row, { justifyContent: "space-evenly" }]}>
-          <Text style={styles.Title}>+92 313 855 3426</Text>
+          <Text style={styles.Title}>{USER_DATA?.phone}</Text>
           <Text style={styles.Title}>|</Text>
-          <Text style={styles.Title}>johnsmith@gmail.com</Text>
+          <Text style={styles.Title}>{USER_DATA?.email}</Text>
         </View>
         <View style={styles.MT_40} />
         {data.map((item) => (
           <Pressable
             onPress={() => {
-              // navigation.navigate(item.route), 
-              item?.callback();
+              if (item?.callback) {
+                item?.callback();
+              } else {
+                navigation.navigate(item.route);
+              }
             }}
             style={[styles.RowItem, item?.stylesList]}
           >

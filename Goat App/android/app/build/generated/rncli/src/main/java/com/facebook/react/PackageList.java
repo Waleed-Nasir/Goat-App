@@ -18,7 +18,7 @@ import com.henninghall.date_picker.DatePickerPackage;
 // react-native-linear-gradient
 import com.BV.LinearGradient.LinearGradientPackage;
 // react-native-maps
-import com.airbnb.android.react.maps.MapsPackage;
+import com.rnmaps.maps.MapsPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens

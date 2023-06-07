@@ -54,7 +54,7 @@ export const addLocalAddress = createAsyncThunk(
   async (body, thunk) => {
     try {
       thunk.dispatch(UserLocal.actions.addLocalAddress(body));
-      MessageShow("success", "Card Updated");
+      MessageShow("success", "Address Updated");
       return thunk.fulfillWithValue("done");
     } catch (error) {
       thunk.dispatch(loaderVisibility(false));

@@ -52,9 +52,6 @@ const OrderBooking = ({
     const data =
       SingleDays === 0
         ? {
-            isRepeated: false,
-            // endDate: date,
-            duration: 1,
             claimedBottles: [],
             items: [
               {
@@ -65,6 +62,7 @@ const OrderBooking = ({
             addressId: addressId,
             paymentMethod: "COD",
             deliverySlot: "evening",
+            repeatFrequency: "days",
           }
         : ForOrder === "Day"
         ? {

@@ -13,11 +13,11 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 import { COLOR } from '../assets/colors';
 
-export const Button = ({ onPress = () => { }, color = COLOR.White, title = '', BG = COLOR.ButtonGreenGradient, style,TextStyle={} }) => {
+export const Button = ({ disabled=false,onPress = () => { }, color = COLOR.White, title = '', BG = COLOR.ButtonGreenGradient, style,TextStyle={} }) => {
     return (
-        <TouchableOpacity onPress={onPress} activeOpacity={0.9} style={[styles.body, style]}>
+        <TouchableOpacity disabled={disabled} onPress={onPress} activeOpacity={0.9} style={[styles.body, style]}>
             <LinearGradient
-                colors={BG}
+                colors={disabled?['gray','black']:BG}
                 style={styles.gradient}
             >
                 <Text style={[styles.Text, { color: color },TextStyle]}>

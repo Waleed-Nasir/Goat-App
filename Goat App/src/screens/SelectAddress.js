@@ -35,6 +35,8 @@ import RadioRow from "../components/RadioRow";
 import Address from "../components/Address";
 import { useNavigation } from "@react-navigation/native";
 import { SCREENS } from "../../App";
+import { useDispatch, useSelector } from "react-redux";
+import { addLocalAddress } from "../Store/slice/UserLocal";
 
 const OPS = [
   "Cash On Delivery",
@@ -44,6 +46,7 @@ const OPS = [
 ];
 
 const SelectAddress = () => {
+  const dispatch = useDispatch();
   const [AddressFor, setAddressFor] = useState(0);
   const [SHOW, setSHOW] = useState(0);
   const navigation = useNavigation();
@@ -53,7 +56,11 @@ const SelectAddress = () => {
     Nearest: "",
     City: "",
   });
+  const { LocalAddress } = useSelector((STATE) => STATE.UserLocal);
+
   // addLocalAddress
+
+  console.log(LocalAddress, "address");
   return (
     <Layout
       Footer={() => (
@@ -80,6 +87,7 @@ const SelectAddress = () => {
                 title="Confirm Location"
                 onPress={() => {
                   setSHOW(0), setAddressFor(0);
+                  dispatch(addLocalAddress(address));
                 }}
               />
             </View>
@@ -97,21 +105,23 @@ const SelectAddress = () => {
       </View>
 
       <View style={styles.padding20}>
-        <Address
-          isMapShow
-          leftIcon={AddressFor === 1 ? null : Assets.Goat_CirclePencil}
-          H={AddressFor === 0 ? 2 : 1.3}
-          LeftPress={() => {
-            setSHOW(1), setAddressFor(1);
-          }}
-        />
+        {LocalAddress ? (
+          <Address
+            {...LocalAddress}
+            leftIcon={AddressFor === 1 ? null : Assets.Goat_CirclePencil}
+            H={AddressFor === 0 ? 2 : 1.3}
+            LeftPress={() => {
+              setSHOW(1), setAddressFor(1);
+            }}
+          />
+        ) : null}
         {AddressFor === 1 ? (
           <>
             <Input
               InputProps={{
                 value: address.Street,
                 onChangeText: (e) => {
-                  setAddress({ ...address, Street });
+                  setAddress({ ...address, Street: e });
                 },
               }}
               placeholder="Street Address"
@@ -120,7 +130,7 @@ const SelectAddress = () => {
               InputProps={{
                 value: address.House,
                 onChangeText: (e) => {
-                  setAddress({ ...address, House });
+                  setAddress({ ...address, House: e });
                 },
               }}
               placeholder="House/Unit #"
@@ -129,7 +139,7 @@ const SelectAddress = () => {
               InputProps={{
                 value: address.Nearest,
                 onChangeText: (e) => {
-                  setAddress({ ...address, Nearest });
+                  setAddress({ ...address, Nearest: e });
                 },
               }}
               placeholder="Nearest Landmark"
@@ -138,7 +148,7 @@ const SelectAddress = () => {
               InputProps={{
                 value: address.City,
                 onChangeText: (e) => {
-                  setAddress({ ...address, City });
+                  setAddress({ ...address, City: e });
                 },
               }}
               placeholder="City"

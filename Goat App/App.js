@@ -22,7 +22,7 @@ import ProductDetails from "./src/screens/ProductDetails";
 import Reason from "./src/screens/Reason";
 import SingIn from "./src/screens/SignIn";
 import SingUp from "./src/screens/SignUp";
-
+import {enableLatestRenderer} from 'react-native-maps';
 import Splash from "./src/screens/Splash";
 import Welcome from "./src/screens/Welcome";
 import SelectAddress from "./src/screens/SelectAddress";
@@ -106,6 +106,7 @@ const AppMain = () => {
   const STATE = useSelector((state) => state);
   console.log(userID)
   useEffect(() => {
+    enableLatestRenderer()
     // alert(accessToken);
     if (accessToken) {
       // dispatch(getCategories());
