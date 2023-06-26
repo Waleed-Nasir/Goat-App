@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.awesomeproject.app-mergeReleaseResources-31:/values-zu/values-zu.xml",
+            "outputFile": "com.awesomeproject.app-mergeReleaseResources-32:/values-zu/values-zu.xml",
             "map": [
                 {
-                    "source": "/Users/waleednasir/.gradle/caches/transforms-3/ea51e9565e00dfcc01c5228a0311af20/transformed/jetified-play-services-basement-18.1.0/res/values-zu/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "127",
-                        "endOffsets": "322"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3848",
-                        "endColumns": "131",
-                        "endOffsets": "3975"
-                    }
-                },
-                {
-                    "source": "/Users/waleednasir/.gradle/caches/transforms-3/7f54a7dfe19ef0767a7a4a59f18603f7/transformed/jetified-play-services-base-18.1.0/res/values-zu/values.xml",
+                    "source": "/Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/res/values-zu/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -35,6 +18,23 @@
                         "startOffsets": "2791,2902,3078,3213,3317,3485,3614,3738,3980,4140,4250,4415,4546,4704,4861,4922,4991",
                         "endColumns": "110,175,134,103,167,128,123,109,159,109,164,130,157,156,60,68,84",
                         "endOffsets": "2897,3073,3208,3312,3480,3609,3733,3843,4135,4245,4410,4541,4699,4856,4917,4986,5071"
+                    }
+                },
+                {
+                    "source": "/Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/res/values-zu/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "127",
+                        "endOffsets": "322"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3848",
+                        "endColumns": "131",
+                        "endOffsets": "3975"
                     }
                 },
                 {

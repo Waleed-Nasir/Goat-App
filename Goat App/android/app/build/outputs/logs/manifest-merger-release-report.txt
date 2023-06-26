@@ -1,16 +1,21 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from [:react-native-linear-gradient] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-maps] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-maps/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-safe-area-context] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-screens] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-screens/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-svg] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-svg/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:1:1-30:12
+MERGED from [:react-native-maps] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-maps/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_async-storage] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/@react-native-community/async-storage/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-date-picker] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-date-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-linear-gradient] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-safe-area-context] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-screens/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-svg] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-svg/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-native:0.70.2] /Users/waleednasir/.gradle/caches/transforms-3/8629e91c48deb7f0d69709fce377ab03/transformed/jetified-react-native-0.70.2-release/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/4aa3daa4c119e5ebf154ad11d072f485/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:19.0.1] /Users/waleednasir/.gradle/caches/transforms-3/fff9ce6b53abd9ca8e4d2cce9c3e6b4a/transformed/jetified-play-services-location-19.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
 MERGED from [com.facebook.react:hermes-engine:0.70.2] /Users/waleednasir/.gradle/caches/transforms-3/4b2655e5e0c5f9a80bd1564c3076f9e7/transformed/jetified-hermes-engine-0.70.2-release/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ff7f9e1ea9c2e709fffb9e018f2252cf/transformed/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/waleednasir/.gradle/caches/transforms-3/1b40e4574e76bff5831ef4bf4270480d/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
@@ -36,12 +41,10 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/waleednasir/.gradl
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/499913aa779d5677f84de1b3821854aa/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/waleednasir/.gradle/caches/transforms-3/f9ee54d84de174f183c63ff08d96461c/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/5485ed2b9a71c62e22c1219fe73818e6/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:17:1-44:12
-MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/waleednasir/.gradle/caches/transforms-3/78c57395196967b06c6cb2d5c289c699/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/7f54a7dfe19ef0767a7a4a59f18603f7/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:17:1-145:12
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/d4ce3f4b0548416e2fc8861880f5736c/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ea51e9565e00dfcc01c5228a0311af20/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/88c9e184e82dd3563270f5005da89963/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/waleednasir/.gradle/caches/transforms-3/19413b2358f4e1f459b46c06a82f9a32/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/237960ca1607edccd2d98c15f52b2dce/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/waleednasir/.gradle/caches/transforms-3/d7aa1f198091ea1cc50dc1c26600633f/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.2.4] /Users/waleednasir/.gradle/caches/transforms-3/93b2272f240cad8e035912fc59023723/transformed/jetified-activity-1.2.4/AndroidManifest.xml:17:1-24:12
@@ -71,52 +74,64 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/waleednasi
 MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/waleednasir/.gradle/caches/transforms-3/cf4bc4bd0a068ff977cd17353fa87ab6/transformed/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/waleednasir/.gradle/caches/transforms-3/4e5f2ec05243774aa7a6d3ac597ca78a/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/waleednasir/.gradle/caches/transforms-3/264bfea9cec9553b72567ddd2a81a286/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/waleednasir/.gradle/caches/transforms-3/b4b22bd2a6accf87a3e5f81474eed1b8/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /Users/waleednasir/.gradle/caches/transforms-3/0f980b4d88316f5e79e128a152679888/transformed/jetified-android-maps-utils-3.4.0/AndroidManifest.xml:2:1-15:12
+MERGED from [com.github.henninghall:numberpickerview:v1.1.5] /Users/waleednasir/.gradle/caches/transforms-3/9b30bb2ac9392326984e629bec4936dc/transformed/jetified-numberpickerview-v1.1.5/AndroidManifest.xml:2:1-11:12
+MERGED from [net.time4j:time4j-android:4.8-2021a] /Users/waleednasir/.gradle/caches/transforms-3/c19b4058e4af20c34268b7b0e48d5683/transformed/jetified-time4j-android-4.8-2021a/AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:2.5.0] /Users/waleednasir/.gradle/caches/transforms-3/45af113d889b5bbfb6fd11bbb9367944/transformed/jetified-fbcore-2.5.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/54294f5f857978835a11e24fc1422778/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:1:1-26:12
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:1:1-30:12
 	package
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:2:3-31
-		INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:2:3-31
+		INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:1:1-26:12
-		INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:1:1-30:12
+		INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:1:1-26:12
-		INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:1:1-30:12
+		INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:4:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:5:1-74
+	android:name
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:5:18-72
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:6:1-76
+	android:name
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:6:18-74
 application
-ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:6:5-25:19
+ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:7:5-29:19
 MERGED from [com.facebook.react:react-native:0.70.2] /Users/waleednasir/.gradle/caches/transforms-3/8629e91c48deb7f0d69709fce377ab03/transformed/jetified-react-native-0.70.2-release/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.70.2] /Users/waleednasir/.gradle/caches/transforms-3/8629e91c48deb7f0d69709fce377ab03/transformed/jetified-react-native-0.70.2-release/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:19.0.1] /Users/waleednasir/.gradle/caches/transforms-3/fff9ce6b53abd9ca8e4d2cce9c3e6b4a/transformed/jetified-play-services-location-19.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:19.0.1] /Users/waleednasir/.gradle/caches/transforms-3/fff9ce6b53abd9ca8e4d2cce9c3e6b4a/transformed/jetified-play-services-location-19.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.material:material:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ff7f9e1ea9c2e709fffb9e018f2252cf/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ff7f9e1ea9c2e709fffb9e018f2252cf/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.4] /Users/waleednasir/.gradle/caches/transforms-3/87826452408345e9fcde9828ee0fb34c/transformed/jetified-soloader-0.10.4/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.4] /Users/waleednasir/.gradle/caches/transforms-3/87826452408345e9fcde9828ee0fb34c/transformed/jetified-soloader-0.10.4/AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
-MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/waleednasir/.gradle/caches/transforms-3/78c57395196967b06c6cb2d5c289c699/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/waleednasir/.gradle/caches/transforms-3/78c57395196967b06c6cb2d5c289c699/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/7f54a7dfe19ef0767a7a4a59f18603f7/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/7f54a7dfe19ef0767a7a4a59f18603f7/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:30:5-143:19
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:30:5-143:19
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/d4ce3f4b0548416e2fc8861880f5736c/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/d4ce3f4b0548416e2fc8861880f5736c/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ea51e9565e00dfcc01c5228a0311af20/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ea51e9565e00dfcc01c5228a0311af20/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/88c9e184e82dd3563270f5005da89963/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/88c9e184e82dd3563270f5005da89963/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/waleednasir/.gradle/caches/transforms-3/19413b2358f4e1f459b46c06a82f9a32/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/waleednasir/.gradle/caches/transforms-3/19413b2358f4e1f459b46c06a82f9a32/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/b6fe4da57007a43d86a66ba4c66459bd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/b6fe4da57007a43d86a66ba4c66459bd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.core:core:1.7.0] /Users/waleednasir/.gradle/caches/transforms-3/63a3df243d2d102452600006144a86df/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
@@ -129,64 +144,82 @@ MERGED from [androidx.room:room-runtime:2.2.5] /Users/waleednasir/.gradle/caches
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/waleednasir/.gradle/caches/transforms-3/d6dec416bb888634412be1a5a950fd3c/transformed/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/waleednasir/.gradle/caches/transforms-3/b6f3e7651a74a74278e1a753048bf61a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/waleednasir/.gradle/caches/transforms-3/b6f3e7651a74a74278e1a753048bf61a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/waleednasir/.gradle/caches/transforms-3/b4b22bd2a6accf87a3e5f81474eed1b8/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/waleednasir/.gradle/caches/transforms-3/b4b22bd2a6accf87a3e5f81474eed1b8/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /Users/waleednasir/.gradle/caches/transforms-3/0f980b4d88316f5e79e128a152679888/transformed/jetified-android-maps-utils-3.4.0/AndroidManifest.xml:9:5-13:19
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /Users/waleednasir/.gradle/caches/transforms-3/0f980b4d88316f5e79e128a152679888/transformed/jetified-android-maps-utils-3.4.0/AndroidManifest.xml:9:5-13:19
+MERGED from [net.time4j:time4j-android:4.8-2021a] /Users/waleednasir/.gradle/caches/transforms-3/c19b4058e4af20c34268b7b0e48d5683/transformed/jetified-time4j-android-4.8-2021a/AndroidManifest.xml:11:5-20
+MERGED from [net.time4j:time4j-android:4.8-2021a] /Users/waleednasir/.gradle/caches/transforms-3/c19b4058e4af20c34268b7b0e48d5683/transformed/jetified-time4j-android-4.8-2021a/AndroidManifest.xml:11:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] /Users/waleednasir/.gradle/caches/transforms-3/63a3df243d2d102452600006144a86df/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:9:7-39
 	android:roundIcon
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:11:7-52
 	android:icon
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:10:7-41
 	android:allowBackup
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:12:7-34
 	android:theme
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:13:7-38
 	android:name
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:8:7-38
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:14:8-16:63
+	android:value
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:16:6-61
+	android:name
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:15:6-51
 activity#com.awesomeproject.MainActivity
-ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:13:7-24:18
+ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:17:7-28:18
 	android:label
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:19:9-41
 	android:launchMode
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:17:9-40
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:21:9-40
 	android:windowSoftInputMode
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:18:9-48
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:22:9-48
 	android:exported
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:19:9-32
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:23:9-32
 	android:configChanges
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:16:9-118
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:20:9-118
 	android:name
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:14:9-37
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:18:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:20:9-23:25
+ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:24:9-27:25
 action#android.intent.action.MAIN
-ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:21:13-65
+ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:25:13-65
 	android:name
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:21:21-62
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:25:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:22:13-73
+ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:26:13-73
 	android:name
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml:22:23-70
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:26:23-70
 uses-sdk
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-linear-gradient] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-linear-gradient] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-maps] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-maps/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-maps] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-maps/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-screens/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-screens/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-svg] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-svg/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-svg] /Users/waleednasir/Desktop/AwesomeProject/node_modules/react-native-svg/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-maps] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-maps/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-maps] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-maps/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/@react-native-community/async-storage/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/@react-native-community/async-storage/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-date-picker] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-date-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-date-picker] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-date-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-linear-gradient] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-linear-gradient] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-screens/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-screens/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-svg/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-svg/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.70.2] /Users/waleednasir/.gradle/caches/transforms-3/8629e91c48deb7f0d69709fce377ab03/transformed/jetified-react-native-0.70.2-release/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.70.2] /Users/waleednasir/.gradle/caches/transforms-3/8629e91c48deb7f0d69709fce377ab03/transformed/jetified-react-native-0.70.2-release/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/4aa3daa4c119e5ebf154ad11d072f485/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/4aa3daa4c119e5ebf154ad11d072f485/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:19.0.1] /Users/waleednasir/.gradle/caches/transforms-3/fff9ce6b53abd9ca8e4d2cce9c3e6b4a/transformed/jetified-play-services-location-19.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:19.0.1] /Users/waleednasir/.gradle/caches/transforms-3/fff9ce6b53abd9ca8e4d2cce9c3e6b4a/transformed/jetified-play-services-location-19.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.facebook.react:hermes-engine:0.70.2] /Users/waleednasir/.gradle/caches/transforms-3/4b2655e5e0c5f9a80bd1564c3076f9e7/transformed/jetified-hermes-engine-0.70.2-release/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:hermes-engine:0.70.2] /Users/waleednasir/.gradle/caches/transforms-3/4b2655e5e0c5f9a80bd1564c3076f9e7/transformed/jetified-hermes-engine-0.70.2-release/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ff7f9e1ea9c2e709fffb9e018f2252cf/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
@@ -237,18 +270,14 @@ MERGED from [androidx.core:core-ktx:1.5.0] /Users/waleednasir/.gradle/caches/tra
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/waleednasir/.gradle/caches/transforms-3/f9ee54d84de174f183c63ff08d96461c/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/5485ed2b9a71c62e22c1219fe73818e6/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/5485ed2b9a71c62e22c1219fe73818e6/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/waleednasir/.gradle/caches/transforms-3/78c57395196967b06c6cb2d5c289c699/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/waleednasir/.gradle/caches/transforms-3/78c57395196967b06c6cb2d5c289c699/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/7f54a7dfe19ef0767a7a4a59f18603f7/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/7f54a7dfe19ef0767a7a4a59f18603f7/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/d4ce3f4b0548416e2fc8861880f5736c/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/d4ce3f4b0548416e2fc8861880f5736c/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ea51e9565e00dfcc01c5228a0311af20/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ea51e9565e00dfcc01c5228a0311af20/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/88c9e184e82dd3563270f5005da89963/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/88c9e184e82dd3563270f5005da89963/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/waleednasir/.gradle/caches/transforms-3/19413b2358f4e1f459b46c06a82f9a32/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/waleednasir/.gradle/caches/transforms-3/19413b2358f4e1f459b46c06a82f9a32/transformed/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/237960ca1607edccd2d98c15f52b2dce/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/237960ca1607edccd2d98c15f52b2dce/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/waleednasir/.gradle/caches/transforms-3/d7aa1f198091ea1cc50dc1c26600633f/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
@@ -307,22 +336,26 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/waleednasir/.gra
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/waleednasir/.gradle/caches/transforms-3/4e5f2ec05243774aa7a6d3ac597ca78a/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/waleednasir/.gradle/caches/transforms-3/264bfea9cec9553b72567ddd2a81a286/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/waleednasir/.gradle/caches/transforms-3/264bfea9cec9553b72567ddd2a81a286/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/waleednasir/.gradle/caches/transforms-3/b4b22bd2a6accf87a3e5f81474eed1b8/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/waleednasir/.gradle/caches/transforms-3/b4b22bd2a6accf87a3e5f81474eed1b8/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /Users/waleednasir/.gradle/caches/transforms-3/0f980b4d88316f5e79e128a152679888/transformed/jetified-android-maps-utils-3.4.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /Users/waleednasir/.gradle/caches/transforms-3/0f980b4d88316f5e79e128a152679888/transformed/jetified-android-maps-utils-3.4.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.henninghall:numberpickerview:v1.1.5] /Users/waleednasir/.gradle/caches/transforms-3/9b30bb2ac9392326984e629bec4936dc/transformed/jetified-numberpickerview-v1.1.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.henninghall:numberpickerview:v1.1.5] /Users/waleednasir/.gradle/caches/transforms-3/9b30bb2ac9392326984e629bec4936dc/transformed/jetified-numberpickerview-v1.1.5/AndroidManifest.xml:7:5-9:41
+MERGED from [net.time4j:time4j-android:4.8-2021a] /Users/waleednasir/.gradle/caches/transforms-3/c19b4058e4af20c34268b7b0e48d5683/transformed/jetified-time4j-android-4.8-2021a/AndroidManifest.xml:7:5-9:41
+MERGED from [net.time4j:time4j-android:4.8-2021a] /Users/waleednasir/.gradle/caches/transforms-3/c19b4058e4af20c34268b7b0e48d5683/transformed/jetified-time4j-android-4.8-2021a/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:2.5.0] /Users/waleednasir/.gradle/caches/transforms-3/45af113d889b5bbfb6fd11bbb9367944/transformed/jetified-fbcore-2.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:2.5.0] /Users/waleednasir/.gradle/caches/transforms-3/45af113d889b5bbfb6fd11bbb9367944/transformed/jetified-fbcore-2.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/54294f5f857978835a11e24fc1422778/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/waleednasir/.gradle/caches/transforms-3/54294f5f857978835a11e24fc1422778/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/waleednasir/Desktop/AwesomeProject/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:5-79
@@ -348,13 +381,13 @@ ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir
 	android:name
 		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/7f54a7dfe19ef0767a7a4a59f18603f7/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/7f54a7dfe19ef0767a7a4a59f18603f7/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/7f54a7dfe19ef0767a7a4a59f18603f7/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/7f54a7dfe19ef0767a7a4a59f18603f7/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
 	android:name
@@ -588,13 +621,13 @@ ADDED from [androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/
 	android:name
 		ADDED from [androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ea51e9565e00dfcc01c5228a0311af20/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/waleednasir/.gradle/caches/transforms-3/b4b22bd2a6accf87a3e5f81474eed1b8/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:8:9-10:69
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /Users/waleednasir/.gradle/caches/transforms-3/b4b22bd2a6accf87a3e5f81474eed1b8/transformed/jetified-android-maps-utils-0.5/AndroidManifest.xml:8:9-10:69
+ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /Users/waleednasir/.gradle/caches/transforms-3/0f980b4d88316f5e79e128a152679888/transformed/jetified-android-maps-utils-3.4.0/AndroidManifest.xml:10:9-12:69
+MERGED from [com.google.maps.android:android-maps-utils:3.4.0] /Users/waleednasir/.gradle/caches/transforms-3/0f980b4d88316f5e79e128a152679888/transformed/jetified-android-maps-utils-3.4.0/AndroidManifest.xml:10:9-12:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ea51e9565e00dfcc01c5228a0311af20/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/waleednasir/.gradle/caches/transforms-3/ea51e9565e00dfcc01c5228a0311af20/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
 ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/b6fe4da57007a43d86a66ba4c66459bd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
 	android:value

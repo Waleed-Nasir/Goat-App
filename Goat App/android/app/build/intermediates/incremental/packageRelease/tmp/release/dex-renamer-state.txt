@@ -1,7 +1,7 @@
-#Fri Nov 11 13:06:11 PST 2022
-base.1=/Users/waleednasir/Desktop/AwesomeProject/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
+#Thu Jun 15 14:20:08 PDT 2023
+base.1=/Users/waleednasir/Desktop/Goat-App/Goat App/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
 path.1=classes2.dex
-base.0=/Users/waleednasir/Desktop/AwesomeProject/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+base.0=/Users/waleednasir/Desktop/Goat-App/Goat App/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex
