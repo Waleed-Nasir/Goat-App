@@ -8,6 +8,10 @@ const initialState = {
   ProductDetail: {},
   OrderList: [],
   address: [],
+  CategoriesList: [],
+  SelectedCategoriesList: [],
+  OrderDetails: {}
+  // 
 };
 
 export const getProductList = createAsyncThunk(
@@ -19,6 +23,37 @@ export const getProductList = createAsyncThunk(
       thunk.dispatch(HomeSlice.actions.getProductList(response.data.products));
       return thunk.fulfillWithValue(response);
     } catch (error) {
+      let err = MessageShow("error", "Error", showResponseError(error));
+      return thunk.rejectWithValue(err);
+    }
+  }
+);
+export const getCategories = createAsyncThunk(
+  "Categories",
+  async (body, thunk) => {
+    try {
+      const response = await MainService.Categories();
+      console.log(response, "response");
+      thunk.dispatch(HomeSlice.actions.getCategories(response.data.categories));
+      return thunk.fulfillWithValue(response);
+    } catch (error) {
+      let err = MessageShow("error", "Error", showResponseError(error));
+      return thunk.rejectWithValue(err);
+    }
+  }
+);
+export const getSelectedCategoriesList = createAsyncThunk(
+  "SelectedCategoriesList",
+  async (body, thunk) => {
+    try {
+      thunk.dispatch(loaderVisibility(true));
+      const response = await MainService.SelectedCategoriesList(body);
+      console.log(response, "response");
+      thunk.dispatch(HomeSlice.actions.getSelectedCategoriesList(response.data.products));
+      thunk.dispatch(loaderVisibility(false));
+      return thunk.fulfillWithValue(response);
+    } catch (error) {
+      thunk.dispatch(loaderVisibility(false));
       let err = MessageShow("error", "Error", showResponseError(error));
       return thunk.rejectWithValue(err);
     }
@@ -50,7 +85,7 @@ export const getPlaceOrder = createAsyncThunk(
       thunk.dispatch(loaderVisibility(true));
       const response = await MainService.PlaceOrder(body.data);
       MessageShow("success", response.message);
-      body?.CallBacK()
+      body?.CallBack()
       thunk.dispatch(loaderVisibility(false));
       return thunk.fulfillWithValue(response);
     } catch (error) {
@@ -81,12 +116,31 @@ export const postClaimBottel = createAsyncThunk(
 
 export const getOrders = createAsyncThunk("getOrders", async (body, thunk) => {
   try {
+    thunk.dispatch(loaderVisibility(true));
     const response = await MainService.OrderList();
     console.log(response, "response");
-    thunk.dispatch(HomeSlice.actions.getOrders(response.data.products));
+    thunk.dispatch(HomeSlice.actions.getOrders(response.data.orders));
+    thunk.dispatch(loaderVisibility(false));
     return thunk.fulfillWithValue(response);
   } catch (error) {
-    console.log(error);
+    thunk.dispatch(loaderVisibility(false));
+
+    let err = MessageShow("error", "Error", showResponseError(error));
+    return thunk.rejectWithValue(err);
+  }
+});
+export const getOrdersDetails = createAsyncThunk("getOrdersDetails", async (body, thunk) => {
+  try {
+    thunk.dispatch(loaderVisibility(true));
+    const response = await MainService.OrderDetails(body);
+    console.log(response, "response");
+
+    thunk.dispatch(loaderVisibility(false));
+    thunk.dispatch(HomeSlice.actions.getOrdersDetails(response.data.order));
+    return thunk.fulfillWithValue(response);
+  } catch (error) {
+    thunk.dispatch(loaderVisibility(false));
+
     let err = MessageShow("error", "Error", showResponseError(error));
     return thunk.rejectWithValue(err);
   }
@@ -122,6 +176,18 @@ export const HomeSlice = createSlice({
     address: (state, action) => {
       let payload = action.payload;
       state.address = payload;
+    },
+    getCategories: (state, action) => {
+      let payload = action.payload;
+      state.CategoriesList = payload;
+    },
+    getSelectedCategoriesList: (state, action) => {
+      let payload = action.payload;
+      state.SelectedCategoriesList = payload;
+    },
+    getOrdersDetails: (state, action) => {
+      let payload = action.payload;
+      state.OrderDetails = payload;
     },
   },
 });

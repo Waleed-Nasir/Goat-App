@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   Dimensions,
   Image,
@@ -16,34 +16,34 @@ import {
   View,
 } from 'react-native';
 import StarRating from 'react-native-star-rating-widget';
-import {COLOR} from '../assets/colors';
-import {Assets} from '../assets/images';
-const {width} = Dimensions.get('screen');
+import { COLOR } from '../assets/colors';
+import { Assets } from '../assets/images';
+const { width } = Dimensions.get('screen');
 
-const MainItem = ({type = 1, onPress,productImage=Assets.Goat_Add}) => {
+const MainItem = ({ type = 1, onPress, productImage = Assets.Goat_Add, title = 'Dairy Products', Rating = '4.9+(1000)' }) => {
   const [rating, setRating] = useState(0);
 
   if (type === 1) {
     return (
       <Pressable style={styles.MainItemButton} onPress={onPress}>
-        <View style={{flex: 1}}>
+        <View style={{ flex: 1 }}>
           <Image
             source={productImage}
             borderRadius={6}
-            style={{width: '100%', height: '100%'}}
+            style={{ width: '100%', height: '100%' }}
             resizeMode={'cover'}
           />
         </View>
         <View style={styles.Row}>
-          <Text style={styles.ProductTitle}>Dairy Products</Text>
+          <Text style={styles.ProductTitle}>{title}</Text>
           <View style={styles.RowBetween}>
             <StarRating
               rating={rating}
               onChange={setRating}
               starSize={20}
-              starStyle={{marginHorizontal: -1}}
+              starStyle={{ marginHorizontal: -1 }}
             />
-            <Text style={styles.Rating}>4.9+(1000)</Text>
+            <Text style={styles.Rating}>{Rating}</Text>
           </View>
         </View>
       </Pressable>
@@ -56,20 +56,20 @@ const MainItem = ({type = 1, onPress,productImage=Assets.Goat_Add}) => {
         <Image
           source={productImage}
           borderRadius={10}
-          style={{width: width / 2.6, height: width / 2.6}}
+          style={{ width: width / 2.6, height: width / 2.6 }}
           resizeMode={'cover'}
         />
       </View>
       <View style={styles.ColumnView}>
-        <Text style={styles.View2ProductTitle}>Dairy Products</Text>
+        <Text style={styles.View2ProductTitle}>{title}</Text>
         <View style={styles.RowBetween}>
           <StarRating
             rating={rating}
             onChange={setRating}
             starSize={20}
-            starStyle={{marginHorizontal: -1}}
+            starStyle={{ marginHorizontal: -1 }}
           />
-          <Text style={styles.Rating}>4.9+(1000)</Text>
+          <Text style={styles.Rating}>{Rating}</Text>
         </View>
       </View>
     </Pressable>
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     lineHeight: 18,
     color: COLOR.Rating,
   },
-  View2: {width: width / 2.6, marginVertical: 10},
+  View2: { width: width / 2.6, marginVertical: 10 },
   ColumnView: {
     flexDirection: 'column',
     width: '100%',

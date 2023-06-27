@@ -6,27 +6,31 @@
  * @flow strict-local
  */
 
-import React, {useState} from 'react';
-import {Dimensions, Image, StyleSheet, Text, View} from 'react-native';
-import { useSelector } from 'react-redux';
-import {COLOR} from '../assets/colors';
-import {Assets} from '../assets/images';
-import {Button} from '../components/Button';
+import React, { useState } from 'react';
+import { Dimensions, Image, StyleSheet, Text, View } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
+import { COLOR } from '../assets/colors';
+import { Assets } from '../assets/images';
+import { Button } from '../components/Button';
 import OrderItem from '../components/OrderItem';
 import Layout from '../Layout';
 import Header from './Header';
-const {width} = Dimensions.get('screen');
+import { useNavigation } from '@react-navigation/native';
+import { SCREENS } from '../../App';
+import { getOrdersDetails } from '../Store/slice/HomeSlices';
+const { width } = Dimensions.get('screen');
 
 const order = [
-  {OrderNo: 'Order # 1202134', Status: 'Rs 1,000.14', Type: 'COD'},
-  {OrderNo: 'Order # 1202134', Status: 'Rs 5,000', Type: 'COD'},
-  {OrderNo: 'Order # 1202134', Status: 'Rs 1,400', Type: 'COD'},
-  {OrderNo: 'Order # 1202134', Status: 'Rs 1,900', Type: 'COD'},
+  { OrderNo: 'Order # 1202134', Status: 'Rs 1,000.14', Type: 'COD' },
+  { OrderNo: 'Order # 1202134', Status: 'Rs 5,000', Type: 'COD' },
+  { OrderNo: 'Order # 1202134', Status: 'Rs 1,400', Type: 'COD' },
+  { OrderNo: 'Order # 1202134', Status: 'Rs 1,900', Type: 'COD' },
 ];
 
 const MyOrders = () => {
   const { OrderList } = useSelector((STATE) => STATE.Home);
-  console.log(OrderList)
+  const navigation = useNavigation()
+  const dispatch = useDispatch()
   return (
     <Layout Header={() => <Header showSlider={false} />}>
       <View style={[styles.Row, styles.MT_40, styles.padding20]}>
@@ -35,12 +39,15 @@ const MyOrders = () => {
 
       <View style={styles.padding20}>
         <View style={styles.Cart}>
-          {order.map(item => (
+          {OrderList.map(item => (
             <OrderItem
               image={Assets.Goat_Redem}
-              style={{padding: 0}}
+              style={{ padding: 0 }}
               {...item}
-              // onPress={() => navigation.navigate(SCREENS.OderDetails)}
+              onPress={() => {
+                dispatch(getOrdersDetails({ orderId: item?._id }))
+                navigation.navigate(SCREENS.TrackOrder)
+              }}
             />
           ))}
         </View>

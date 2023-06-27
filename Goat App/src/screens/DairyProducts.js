@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   Dimensions,
   FlatList,
@@ -18,34 +18,35 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {COLOR} from '../assets/colors';
-import {Assets} from '../assets/images';
+import { COLOR } from '../assets/colors';
+import { Assets } from '../assets/images';
 import Layout from '../Layout';
 import Header from './Header';
-const {width} = Dimensions.get('screen');
+const { width } = Dimensions.get('screen');
 import StarRating from 'react-native-star-rating-widget';
 import MainItem from '../components/MeanItem';
 import Item from '../components/Item';
 import CategoriesFor from '../components/CategoriesFor';
-import {Button} from '../components/Button';
+import { Button } from '../components/Button';
 import Accordian from '../components/Accordian';
 import VerticalSlider from '../components/VerticalSlider';
-import {SCREENS} from '../../App';
-import {useNavigation} from '@react-navigation/native';
+import { SCREENS } from '../../App';
+import { useNavigation } from '@react-navigation/native';
+import { useSelector } from 'react-redux';
 
 const DairyProducts = () => {
   const navigation = useNavigation();
-
+  const { SelectedCategoriesList } = useSelector((STATE) => STATE.Home);
   return (
     <Layout
     // Header={() =>}
     >
       <Header />
-      <View style={[styles.Row, {justifyContent: 'flex-start', padding: 15}]}>
+      <View style={[styles.Row, { justifyContent: 'flex-start', padding: 15 }]}>
         <Text
           style={[
             styles.FilerText,
-            {fontWeight: '400', color: COLOR.GrayText},
+            { fontWeight: '400', color: COLOR.GrayText },
           ]}>
           Home
         </Text>
@@ -54,20 +55,20 @@ const DairyProducts = () => {
           style={styles.MiniArrow}
           resizeMode={'stretch'}
         />
-        <Text style={[styles.FilerText, {fontWeight: '400'}]}>Category</Text>
+        <Text style={[styles.FilerText, { fontWeight: '400' }]}>Category</Text>
         <Image
           source={Assets.Goat_SettingArrow}
           style={styles.MiniArrow}
           resizeMode={'stretch'}
         />
-        <Text style={[styles.FilerText, {fontWeight: '400'}]}>
+        <Text style={[styles.FilerText, { fontWeight: '400' }]}>
           Product List
         </Text>
       </View>
       <View style={styles.padding20}>
         <View style={styles.Row}>
           <Text style={styles.MainText}>Dairy Products</Text>
-          <View style={[styles.Row, {justifyContent: 'flex-end'}]}>
+          <View style={[styles.Row, { justifyContent: 'flex-end' }]}>
             <Pressable>
               <Image source={Assets.Goat_ListPreview} />
             </Pressable>
@@ -87,11 +88,20 @@ const DairyProducts = () => {
       </View>
       <FlatList
         numColumns={2}
-        style={{width: '100%'}}
-        contentContainerStyle={{paddingHorizontal: 11}}
-        data={Array(24).fill(0)}
-        renderItem={() => (
-          <Item onPress={() => navigation.navigate(SCREENS.ProductDetails)} />
+        style={{ width: '100%' }}
+        contentContainerStyle={{ paddingHorizontal: 11 }}
+        data={SelectedCategoriesList}
+        renderItem={({ item, index }) => (
+          <Item
+            data={item}
+            productImage={
+              index % 2 == 1 ? Assets.Goat_Meat : Assets.Goat_Bottle
+            }
+            onPress={() =>
+              navigation.navigate(SCREENS.ProductDetails)
+            }
+            index={index}
+          />
         )}
       />
     </Layout>

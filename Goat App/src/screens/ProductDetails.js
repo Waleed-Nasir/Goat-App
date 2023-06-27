@@ -50,9 +50,27 @@ const ProductDetails = () => {
   const [OrderData, setOrderData] = useState({});
   const [rating, setRating] = useState(0);
   const dispatch = useDispatch();
-  const { CartProduct, FavProduct } = useSelector((STATE) => STATE.UserLocal);
+  const { CartProduct, FavProduct, LocalAddress } = useSelector((STATE) => STATE.UserLocal);
+
   const like = FavProduct?.map((item) => item._id)?.includes(product?._id);
   console.log(OrderData, "ProductDetail", like, FavProduct, product?._id);
+
+
+  useEffect(() => {
+    if (LocalAddress && LocalAddress?.Street && OrderData) {
+      setOrderData({
+        ...OrderData,
+        addressLine1:
+          LocalAddress?.Street +
+          " " +
+          LocalAddress?.House +
+          " " +
+          LocalAddress?.Nearest +
+          " " +
+          LocalAddress?.City,
+      })
+    }
+  }, [])
   return (
     <Layout
       Header={() => <Header showSlider={false} />}

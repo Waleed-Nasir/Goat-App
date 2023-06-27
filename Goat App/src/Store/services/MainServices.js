@@ -3,6 +3,47 @@ import { Store } from "../Store";
 import { API_URLS } from "../../utils/End_Point";
 import { getAccessToken } from "../slice/AuthSlicer";
 
+
+
+const SelectedCategoriesList = async (params = "") => {
+  const token = getAccessToken(Store.getState());
+  const onSuccess = ({ data }) => {
+    return data;
+  };
+
+  const onFailure = (error) => {
+    throw error;
+  };
+
+  try {
+    const result = await axios.post(API_URLS.BaseURL + API_URLS.GET_PRODUCTS_BY_CATEGORY, { category: params }, {
+      headers: { Authorization: "Bearer " + token },
+    });
+    return onSuccess(result);
+  } catch (error) {
+    return onFailure(error);
+  }
+};
+
+const Categories = async (params = "") => {
+  const token = getAccessToken(Store.getState());
+  const onSuccess = ({ data }) => {
+    return data;
+  };
+
+  const onFailure = (error) => {
+    throw error;
+  };
+
+  try {
+    const result = await axios.get(API_URLS.BaseURL + API_URLS.CATEGORY, {
+      headers: { Authorization: "Bearer " + token },
+    });
+    return onSuccess(result);
+  } catch (error) {
+    return onFailure(error);
+  }
+};
 const ProductList = async (params = "") => {
   const token = getAccessToken(Store.getState());
   const onSuccess = ({ data }) => {
@@ -166,6 +207,8 @@ const MainService = {
   OrderList,
   OrderDetails,
   Address,
+  Categories,
+  SelectedCategoriesList
 };
 
 export default MainService;

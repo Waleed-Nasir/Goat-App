@@ -9,347 +9,347 @@
 9        android:targetSdkVersion="31" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:4:5-67
-12-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:4:22-64
+12-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-13-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:5:1-74
-13-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:5:18-72
+13-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:5:1-74
+13-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:5:18-72
 14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-14-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:6:1-76
-14-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:6:18-74
+14-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:6:1-76
+14-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:6:18-74
 15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Include required permissions for Google Maps API to run. -->
-15-->[com.facebook.flipper:flipper:0.125.0] /Users/waleednasir/.gradle/caches/transforms-3/03f04a3f11198ce3b7c6cedb9b41266b/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
-15-->[com.facebook.flipper:flipper:0.125.0] /Users/waleednasir/.gradle/caches/transforms-3/03f04a3f11198ce3b7c6cedb9b41266b/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
+15-->[com.facebook.flipper:flipper:0.125.0] /Users/macbook/.gradle/caches/transforms-3/03f04a3f11198ce3b7c6cedb9b41266b/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
+15-->[com.facebook.flipper:flipper:0.125.0] /Users/macbook/.gradle/caches/transforms-3/03f04a3f11198ce3b7c6cedb9b41266b/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
-16-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:22-76
+16-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
+16-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:22-76
 17
 18    <uses-feature
-18-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+18-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
 19        android:glEsVersion="0x00020000"
-19-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+19-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
 20        android:required="true" />
-20-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+20-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
 21
 22    <queries>
-22-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
+22-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
 23
 24        <!-- Needs to be explicitly declared on Android R+ -->
 25        <package android:name="com.google.android.apps.maps" />
-25-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
-25-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+25-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+25-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
 26    </queries>
 27
 28    <uses-permission android:name="android.permission.WAKE_LOCK" />
-28-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
-28-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:22-65
+28-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
+28-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:22-65
 29    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-29-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
-29-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+29-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+29-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
 30    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-30-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
-30-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
+30-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
+30-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
 31
 32    <application
-32-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:7:5-29:19
+32-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:7:5-29:19
 33        android:name="com.awesomeproject.MainApplication"
-33-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:8:7-38
+33-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:8:7-38
 34        android:allowBackup="false"
-34-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:12:7-34
+34-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:12:7-34
 35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-35-->[androidx.core:core:1.7.0] /Users/waleednasir/.gradle/caches/transforms-3/63a3df243d2d102452600006144a86df/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+35-->[androidx.core:core:1.7.0] /Users/macbook/.gradle/caches/transforms-3/63a3df243d2d102452600006144a86df/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 36        android:debuggable="true"
 37        android:icon="@mipmap/ic_launcher"
-37-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:10:7-41
+37-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:10:7-41
 38        android:label="@string/app_name"
-38-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:9:7-39
+38-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:9:7-39
 39        android:roundIcon="@mipmap/ic_launcher_round"
-39-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:11:7-52
+39-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:11:7-52
 40        android:theme="@style/AppTheme"
-40-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:13:7-38
+40-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:13:7-38
 41        android:usesCleartextTraffic="true" >
-41-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/debug/AndroidManifest.xml:8:9-44
+41-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/debug/AndroidManifest.xml:8:9-44
 42        <activity
-42-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/debug/AndroidManifest.xml:11:9-111
+42-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/debug/AndroidManifest.xml:11:9-111
 43            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-43-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/debug/AndroidManifest.xml:11:19-83
+43-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/debug/AndroidManifest.xml:11:19-83
 44            android:exported="false" />
-44-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/debug/AndroidManifest.xml:11:84-108
+44-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/debug/AndroidManifest.xml:11:84-108
 45
 46        <meta-data
-46-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:14:8-16:63
+46-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:14:8-16:63
 47            android:name="com.google.android.geo.API_KEY"
-47-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:15:6-51
-48            android:value="AIzaSyCAIwTPctnSM2PWcbK6cMdlZaSgEYIKp5U" />
-48-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:16:6-61
+47-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:15:6-51
+48            android:value="AIzaSyB2meCUCTKXZQ8mkgXDyi2HfUeUza9PQrs" />
+48-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:16:6-61
 49
 50        <activity
-50-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:17:7-28:18
+50-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:17:7-28:18
 51            android:name="com.awesomeproject.MainActivity"
-51-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:18:9-37
+51-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:18:9-37
 52            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-52-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:20:9-118
+52-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:20:9-118
 53            android:exported="true"
-53-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:23:9-32
+53-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:23:9-32
 54            android:label="@string/app_name"
-54-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:19:9-41
+54-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:19:9-41
 55            android:launchMode="singleTask"
-55-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:21:9-40
+55-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:21:9-40
 56            android:windowSoftInputMode="adjustPan" >
-56-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:22:9-48
+56-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:22:9-48
 57            <intent-filter>
-57-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:24:9-27:25
+57-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:24:9-27:25
 58                <action android:name="android.intent.action.MAIN" />
-58-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:25:13-65
-58-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:25:21-62
+58-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:25:13-65
+58-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:25:21-62
 59
 60                <category android:name="android.intent.category.LAUNCHER" />
-60-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:26:13-73
-60-->/Users/waleednasir/Desktop/Projects/Goat-App-/Goat App/android/app/src/main/AndroidManifest.xml:26:23-70
+60-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:26:13-73
+60-->/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/src/main/AndroidManifest.xml:26:23-70
 61            </intent-filter>
 62        </activity> <!-- Needs to be explicitly declared on P+ -->
 63        <uses-library
-63-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+63-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
 64            android:name="org.apache.http.legacy"
-64-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+64-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
 65            android:required="false" />
-65-->[com.google.android.gms:play-services-maps:18.0.2] /Users/waleednasir/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+65-->[com.google.android.gms:play-services-maps:18.0.2] /Users/macbook/.gradle/caches/transforms-3/5b94eed69c74e072e7c17c8facb87462/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
 66
 67        <activity
-67-->[com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+67-->[com.google.android.gms:play-services-base:18.0.1] /Users/macbook/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
 68            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-68-->[com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+68-->[com.google.android.gms:play-services-base:18.0.1] /Users/macbook/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
 69            android:exported="false"
-69-->[com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+69-->[com.google.android.gms:play-services-base:18.0.1] /Users/macbook/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
 70            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-70-->[com.google.android.gms:play-services-base:18.0.1] /Users/waleednasir/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+70-->[com.google.android.gms:play-services-base:18.0.1] /Users/macbook/.gradle/caches/transforms-3/f88b5a2c0b62a187e4b15b1bc1640873/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
 71
 72        <provider
-72-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+72-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
 73            android:name="androidx.startup.InitializationProvider"
-73-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+73-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
 74            android:authorities="com.awesomeproject.androidx-startup"
-74-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+74-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
 75            android:exported="false" >
-75-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+75-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
 76            <meta-data
-76-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+76-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
 77                android:name="androidx.work.WorkManagerInitializer"
-77-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+77-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
 78                android:value="androidx.startup" />
-78-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+78-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
 79            <meta-data
-79-->[androidx.emoji2:emoji2:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/b6fe4da57007a43d86a66ba4c66459bd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+79-->[androidx.emoji2:emoji2:1.0.0] /Users/macbook/.gradle/caches/transforms-3/b6fe4da57007a43d86a66ba4c66459bd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
 80                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-80-->[androidx.emoji2:emoji2:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/b6fe4da57007a43d86a66ba4c66459bd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+80-->[androidx.emoji2:emoji2:1.0.0] /Users/macbook/.gradle/caches/transforms-3/b6fe4da57007a43d86a66ba4c66459bd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
 81                android:value="androidx.startup" />
-81-->[androidx.emoji2:emoji2:1.0.0] /Users/waleednasir/.gradle/caches/transforms-3/b6fe4da57007a43d86a66ba4c66459bd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+81-->[androidx.emoji2:emoji2:1.0.0] /Users/macbook/.gradle/caches/transforms-3/b6fe4da57007a43d86a66ba4c66459bd/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
 82            <meta-data
-82-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/waleednasir/.gradle/caches/transforms-3/bc74a39e1ea23fea00bfcf2682a93948/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+82-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/macbook/.gradle/caches/transforms-3/bc74a39e1ea23fea00bfcf2682a93948/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
 83                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-83-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/waleednasir/.gradle/caches/transforms-3/bc74a39e1ea23fea00bfcf2682a93948/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+83-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/macbook/.gradle/caches/transforms-3/bc74a39e1ea23fea00bfcf2682a93948/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
 84                android:value="androidx.startup" />
-84-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/waleednasir/.gradle/caches/transforms-3/bc74a39e1ea23fea00bfcf2682a93948/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+84-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/macbook/.gradle/caches/transforms-3/bc74a39e1ea23fea00bfcf2682a93948/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
 85        </provider>
 86
 87        <service
-87-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+87-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
 88            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-88-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+88-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
 89            android:directBootAware="false"
-89-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+89-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
 90            android:enabled="@bool/enable_system_alarm_service_default"
-90-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+90-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
 91            android:exported="false" />
-91-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+91-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
 92        <service
-92-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+92-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
 93            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-93-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+93-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
 94            android:directBootAware="false"
-94-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+94-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
 95            android:enabled="@bool/enable_system_job_service_default"
-95-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+95-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
 96            android:exported="true"
-96-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+96-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
 97            android:permission="android.permission.BIND_JOB_SERVICE" />
-97-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+97-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
 98        <service
-98-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+98-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
 99            android:name="androidx.work.impl.foreground.SystemForegroundService"
-99-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+99-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
 100            android:directBootAware="false"
-100-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+100-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
 101            android:enabled="@bool/enable_system_foreground_service_default"
-101-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+101-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
 102            android:exported="false" />
-102-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+102-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
 103
 104        <receiver
-104-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+104-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
 105            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-105-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+105-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
 106            android:directBootAware="false"
-106-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+106-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
 107            android:enabled="true"
-107-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+107-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
 108            android:exported="false" />
-108-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+108-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
 109        <receiver
-109-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+109-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
 110            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-110-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+110-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
 111            android:directBootAware="false"
-111-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+111-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
 112            android:enabled="false"
-112-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+112-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
 113            android:exported="false" >
-113-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+113-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
 114            <intent-filter>
-114-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+114-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
 115                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-115-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
-115-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+115-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+115-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
 116                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-116-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
-116-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+116-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+116-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
 117            </intent-filter>
 118        </receiver>
 119        <receiver
-119-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+119-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
 120            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-120-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+120-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
 121            android:directBootAware="false"
-121-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+121-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
 122            android:enabled="false"
-122-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+122-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
 123            android:exported="false" >
-123-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+123-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
 124            <intent-filter>
-124-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+124-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
 125                <action android:name="android.intent.action.BATTERY_OKAY" />
-125-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
-125-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+125-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+125-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
 126                <action android:name="android.intent.action.BATTERY_LOW" />
-126-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
-126-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+126-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+126-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
 127            </intent-filter>
 128        </receiver>
 129        <receiver
-129-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+129-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
 130            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-130-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+130-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
 131            android:directBootAware="false"
-131-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+131-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
 132            android:enabled="false"
-132-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+132-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
 133            android:exported="false" >
-133-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+133-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
 134            <intent-filter>
-134-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+134-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
 135                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-135-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
-135-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+135-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+135-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
 136                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-136-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
-136-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+136-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+136-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
 137            </intent-filter>
 138        </receiver>
 139        <receiver
-139-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+139-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
 140            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-140-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+140-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
 141            android:directBootAware="false"
-141-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+141-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
 142            android:enabled="false"
-142-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+142-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
 143            android:exported="false" >
-143-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+143-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
 144            <intent-filter>
-144-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+144-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
 145                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-145-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
-145-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+145-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+145-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
 146            </intent-filter>
 147        </receiver>
 148        <receiver
-148-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+148-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
 149            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-149-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+149-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
 150            android:directBootAware="false"
-150-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+150-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
 151            android:enabled="false"
-151-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+151-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
 152            android:exported="false" >
-152-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+152-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
 153            <intent-filter>
-153-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+153-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
 154                <action android:name="android.intent.action.BOOT_COMPLETED" />
-154-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
-154-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+154-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+154-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
 155                <action android:name="android.intent.action.TIME_SET" />
-155-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
-155-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+155-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+155-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
 156                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-156-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
-156-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+156-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+156-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
 157            </intent-filter>
 158        </receiver>
 159        <receiver
-159-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+159-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
 160            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-160-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+160-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
 161            android:directBootAware="false"
-161-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+161-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
 162            android:enabled="@bool/enable_system_alarm_service_default"
-162-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+162-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
 163            android:exported="false" >
-163-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+163-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
 164            <intent-filter>
-164-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+164-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
 165                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-165-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
-165-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+165-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+165-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
 166            </intent-filter>
 167        </receiver>
 168        <receiver
-168-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+168-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
 169            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
-169-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+169-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
 170            android:directBootAware="false"
-170-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+170-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
 171            android:enabled="true"
-171-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+171-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
 172            android:exported="true"
-172-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+172-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
 173            android:permission="android.permission.DUMP" >
-173-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+173-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
 174            <intent-filter>
-174-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+174-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
 175                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
-175-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
-175-->[androidx.work:work-runtime:2.7.1] /Users/waleednasir/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+175-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+175-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-3/3bc811facf50ede55bc8298072e0374d/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
 176            </intent-filter>
 177        </receiver>
 178
 179        <service
-179-->[androidx.room:room-runtime:2.2.5] /Users/waleednasir/.gradle/caches/transforms-3/d6dec416bb888634412be1a5a950fd3c/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+179-->[androidx.room:room-runtime:2.2.5] /Users/macbook/.gradle/caches/transforms-3/d6dec416bb888634412be1a5a950fd3c/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
 180            android:name="androidx.room.MultiInstanceInvalidationService"
-180-->[androidx.room:room-runtime:2.2.5] /Users/waleednasir/.gradle/caches/transforms-3/d6dec416bb888634412be1a5a950fd3c/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+180-->[androidx.room:room-runtime:2.2.5] /Users/macbook/.gradle/caches/transforms-3/d6dec416bb888634412be1a5a950fd3c/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
 181            android:directBootAware="true"
-181-->[androidx.room:room-runtime:2.2.5] /Users/waleednasir/.gradle/caches/transforms-3/d6dec416bb888634412be1a5a950fd3c/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+181-->[androidx.room:room-runtime:2.2.5] /Users/macbook/.gradle/caches/transforms-3/d6dec416bb888634412be1a5a950fd3c/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
 182            android:exported="false" />
-182-->[androidx.room:room-runtime:2.2.5] /Users/waleednasir/.gradle/caches/transforms-3/d6dec416bb888634412be1a5a950fd3c/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+182-->[androidx.room:room-runtime:2.2.5] /Users/macbook/.gradle/caches/transforms-3/d6dec416bb888634412be1a5a950fd3c/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
 183
 184        <meta-data
-184-->[com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+184-->[com.google.android.gms:play-services-basement:18.0.0] /Users/macbook/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
 185            android:name="com.google.android.gms.version"
-185-->[com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+185-->[com.google.android.gms:play-services-basement:18.0.0] /Users/macbook/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
 186            android:value="@integer/google_play_services_version" />
-186-->[com.google.android.gms:play-services-basement:18.0.0] /Users/waleednasir/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+186-->[com.google.android.gms:play-services-basement:18.0.0] /Users/macbook/.gradle/caches/transforms-3/0d39a69999dbc6a118940cc88a77f408/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
 187    </application>
 188
 189</manifest>

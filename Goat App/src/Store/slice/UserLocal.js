@@ -86,5 +86,5 @@ export const UserLocal = createSlice({
   },
 });
 
-// export const { handleFavProduct, handleCartProduct } = UserLocal.actions;
+export const { gethandleCartProduct } = UserLocal.actions;
 export default UserLocal.reducer;

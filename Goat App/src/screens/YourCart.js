@@ -32,7 +32,9 @@ import Accordian from "../components/Accordian";
 import VerticalSlider from "../components/VerticalSlider";
 import { useNavigation } from "@react-navigation/native";
 import { SCREENS } from "../../App";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { getOneClikedBuy } from "../Store/slice/UserLocal";
 
 const YourCart = () => {
   const navigation = useNavigation();
@@ -47,6 +49,36 @@ const YourCart = () => {
   }
 
   console.log(total);
+
+  const [HandleCart, setHandleCard] = useState()
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    if (CartProduct && Object.values(CartProduct)?.length) {
+      const data = {
+        OrderData: {
+          addressId: null,
+          claimedBottles: [],
+          deliverySlot: "evening",
+          items: Object.values(CartProduct)?.map((item) => ({
+            name: item.name,
+            id: item._id, quantity: item.Qty,
+            price: item.price,
+          })),
+          paymentMethod: "COD",
+          repeatFrequency: "days",
+        },
+        price: total,
+        total: total
+      }
+      setHandleCard(data)
+    }
+
+  }, [CartProduct])
+
+  //
+
+
   return (
     <Layout Header={() => <Header showSlider={false} />}>
       <View style={styles.padding20}>
@@ -79,6 +111,7 @@ const YourCart = () => {
         <Button
           title="Checkout"
           onPress={() => {
+            dispatch(getOneClikedBuy(HandleCart));
             navigation.navigate(SCREENS.CheckOut);
           }}
         />

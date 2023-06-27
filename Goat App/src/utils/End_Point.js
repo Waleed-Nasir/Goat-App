@@ -16,7 +16,8 @@ export const API_URLS = {
   ORDER_DETAILS: "orders/details", //########DONE##########//
   ///ADDRESS
   ADDRESS: "user/addresses/",
-
+  CATEGORY: "category", //########DONE##########//
+  GET_PRODUCTS_BY_CATEGORY: 'product/category',
   //USER
   USER_DETAILS: "auth/user?token=", //USER ID   //######## DONE##########//
   UPDATE_PROFILE: "front/users/update/", //USER ID  //########--------------DONE-------------##########//

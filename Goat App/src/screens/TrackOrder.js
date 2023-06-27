@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   Dimensions,
   FlatList,
@@ -18,16 +18,16 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {COLOR} from '../assets/colors';
-import {Assets} from '../assets/images';
+import { COLOR } from '../assets/colors';
+import { Assets } from '../assets/images';
 import Layout from '../Layout';
 import Header from './Header';
-const {width} = Dimensions.get('screen');
+const { width } = Dimensions.get('screen');
 import StarRating from 'react-native-star-rating-widget';
 import MainItem from '../components/MeanItem';
 import Item from '../components/Item';
 import CategoriesFor from '../components/CategoriesFor';
-import {Button} from '../components/Button';
+import { Button } from '../components/Button';
 import Accordian from '../components/Accordian';
 import VerticalSlider from '../components/VerticalSlider';
 import Input from '../components/Input';
@@ -35,18 +35,42 @@ import RadioRow from '../components/RadioRow';
 import Address from '../components/Address';
 import { useNavigation } from '@react-navigation/native';
 import { SCREENS } from '../../App';
+import { useSelector } from 'react-redux';
 
-const OPS = [
-  'Cash On Delivery',
-  'Jazzcash',
-  'Easypaisa',
-  'Visa OR Master Card',
-];
 
 const TrackOrder = () => {
   const [CurrentIndex, setCurrentIndex] = useState(0);
   const navigation = useNavigation();
+  const { OrderDetails } = useSelector((STATE) => STATE.Home);
 
+  const OPS = [
+    'Cash On Delivery',
+    'Jazzcash',
+    'Easypaisa',
+    'Visa OR Master Card',
+  ];
+  const data = [
+    {
+      image: Assets.Goat_TrackConfirm,
+      text:  OrderDetails.status,// 'Your order has been\nconfirmed!',
+      title: 'Confirmed',
+    },
+    {
+      image: Assets.Goat_TrackOrderWay,
+      text: 'Your order has been\ndispatched!',
+      title: 'Dispatched',
+    },
+    {
+      image: Assets.Goat_TrackLocation,
+      text: 'Our rider is just around\nthe corner!',
+      title: 'Near you',
+    },
+    {
+      image: Assets.Goat_TrackOrderEnd,
+      text: 'The order has been\nDelivered!',
+      title: 'Delivered',
+    },
+  ];
   return (
     <Layout Header={() => <Header showSlider={false} />}>
       <View style={styles.padding20}>
@@ -56,7 +80,7 @@ const TrackOrder = () => {
         <View style={styles.ImageIND}>
           <Image
             source={data[CurrentIndex].image}
-            style={{width: '100%', height: '100%'}}
+            style={{ width: '100%', height: '100%' }}
             resizeMode={'contain'}
           />
         </View>
@@ -67,10 +91,10 @@ const TrackOrder = () => {
             return (
               <>
                 <Pressable
-                  onPress={() => setCurrentIndex(index)}
+                  // onPress={() => setCurrentIndex(index)}
                   style={styles.Center}>
                   <View>
-                    <Text style={[styles.Title, {fontSize: 16}]}>
+                    <Text style={[styles.Title, { fontSize: 16 }]}>
                       {index + 1}
                     </Text>
                   </View>
@@ -78,14 +102,14 @@ const TrackOrder = () => {
                     style={[
                       styles.Ring,
                       index === CurrentIndex
-                        ? {borderColor: COLOR.DarkGreen}
+                        ? { borderColor: COLOR.DarkGreen }
                         : {},
                     ]}>
                     <View
                       style={[
                         styles.FillRing,
                         index === CurrentIndex
-                          ? {backgroundColor: COLOR.DarkGreen}
+                          ? { backgroundColor: COLOR.DarkGreen }
                           : {},
                       ]}
                     />
@@ -106,14 +130,14 @@ const TrackOrder = () => {
             </View>
             <Input
               placeholder="Write Your Message here"
-              InputProps={{numberOfLines: 5, multiline: true}}
-              InputStyle={{height: 80}}
+              InputProps={{ numberOfLines: 5, multiline: true }}
+              InputStyle={{ height: 80 }}
             />
-            <Button title="Get Help With Order" onPress={() => {navigation.navigate(SCREENS.SupportRequest)}} />
+            <Button title="Get Help With Order" onPress={() => { navigation.navigate(SCREENS.SupportRequest) }} />
           </>
         ) : (
           <View style={[styles.Row, styles.MT_40]}>
-            <Button title="Back to Home" onPress={() => {navigation.navigate(SCREENS.Home)}} />
+            <Button title="Back to Home" onPress={() => { navigation.navigate(SCREENS.Home) }} />
           </View>
         )}
       </View>
@@ -199,6 +223,7 @@ const styles = StyleSheet.create({
   },
   Ring: {
     width: 20,
+
     height: 20,
     padding: 4.5,
     borderRadius: 100,
@@ -231,25 +256,3 @@ const styles = StyleSheet.create({
 
 export default TrackOrder;
 
-const data = [
-  {
-    image: Assets.Goat_TrackConfirm,
-    text: 'Your order has been\nconfirmed!',
-    title: 'Confirmed',
-  },
-  {
-    image: Assets.Goat_TrackOrderWay,
-    text: 'Your order has been\ndispatched!',
-    title: 'Dispatched',
-  },
-  {
-    image: Assets.Goat_TrackLocation,
-    text: 'Our rider is just around\nthe corner!',
-    title: 'Near you',
-  },
-  {
-    image: Assets.Goat_TrackOrderEnd,
-    text: 'The order has been\nDelivered!',
-    title: 'Delivered',
-  },
-];

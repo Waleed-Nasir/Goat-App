@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   Dimensions,
   Image,
@@ -15,15 +15,17 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {COLOR} from '../assets/colors';
-import {Assets} from '../assets/images';
+import { COLOR } from '../assets/colors';
+import { Assets } from '../assets/images';
 
 const OrderItem = ({
   image = Assets.Checkx,
-  OrderNo = '',
-  Status = '',
-  Type = '',
+  customOrderId = '',
+  status = '',
+  paymentMethod = '',
   onPress,
+  deliverySlot = '',
+  total = '',
   style = {},
 }) => {
   return (
@@ -31,12 +33,14 @@ const OrderItem = ({
       <View style={styles.OrderInfo}>
         <Image source={image} style={styles.ph_10} />
         <View style={styles.ph_10}>
-          <Text style={styles.OrderText}>{OrderNo}</Text>
-          <Text style={[styles.OrderText, {fontSize: 12}]}>{Type}</Text>
+          <Text style={styles.OrderText}>ID{customOrderId}</Text>
+          <Text style={[styles.OrderText, { fontSize: 12 }]}>Total: Rs:{total}</Text>
+          <Text style={[styles.OrderText, { fontSize: 12 }]}>Payment: {paymentMethod}</Text>
+          <Text style={[styles.OrderText, { fontSize: 12 }]}>Delivery Slot: {deliverySlot}</Text>
         </View>
       </View>
       <View style={styles.PriceInfo}>
-        <Text style={styles.PriceText}>{Status}</Text>
+        <Text style={styles.PriceText}>{status}</Text>
       </View>
     </TouchableOpacity>
   );
@@ -60,6 +64,8 @@ const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: COLOR.ButtonGreen,
     borderRadius: 6,
+    borderBottomWidth: 2,
+    borderColor: 'white'
   },
   OrderInfo: {
     flex: 1,
@@ -81,7 +87,7 @@ const styles = StyleSheet.create({
     minWidth: 90,
     padding: 5,
     backgroundColor: COLOR.DarkGreen,
-    height: 22,
+    height: 25,
   },
   PriceText: {
     fontStyle: 'normal',

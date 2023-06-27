@@ -32,11 +32,13 @@ import Accordian from "../components/Accordian";
 import { useNavigation } from "@react-navigation/native";
 import { SCREENS } from "../../App";
 import BottomTab from "../components/BottomTab";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { getSelectedCategoriesList } from "../Store/slice/HomeSlices";
 
 const Home = () => {
   const navigation = useNavigation();
-  const { ProductList } = useSelector((STATE) => STATE.Home);
+  const dispatch = useDispatch();
+  const { ProductList, CategoriesList } = useSelector((STATE) => STATE.Home);
   const STATE = useSelector((STATE) => STATE);
   console.log(STATE);
   return (
@@ -58,20 +60,33 @@ const Home = () => {
         </TouchableOpacity>
         <View style={styles.Container}>
           <CategoriesFor title="Categories" isImage />
-          <MainItem
-            onPress={() => navigation.navigate(SCREENS.DairyProducts)}
-          />
-
+          {CategoriesList && CategoriesList[0] ? <MainItem
+            title={CategoriesList[0].name}
+            onPress={() => { dispatch(getSelectedCategoriesList(CategoriesList[0]?._id)), navigation.navigate(SCREENS.DairyProducts) }}
+          /> : null}
           <View style={styles.Warp}>
-            <MainItem
-              type={2}
-              onPress={() => navigation.navigate(SCREENS.DairyProducts)}
+            {CategoriesList?.map((item, index) => {
+              if (index === 0) {
+                return null
+              } else
+                return <MainItem
+                  type={2}
+                  title={item.name}
+                  onPress={() => { dispatch(getSelectedCategoriesList(item._id)), navigation.navigate(SCREENS.DairyProducts) }}
+                />
+              {/* <MainItem
+            onPress={() => navigation.navigate(SCREENS.DairyProducts)}
             />
+            
+            <View style={styles.Warp}>
+           
             <MainItem
-              type={2}
-              onPress={() => navigation.navigate(SCREENS.DairyProducts)}
-              productImage={Assets.Goat_Goat}
+            type={2}
+            onPress={() => navigation.navigate(SCREENS.DairyProducts)}
+            productImage={Assets.Goat_Goat}
             />
+          </View> */}
+            })}
           </View>
         </View>
         <View style={styles.padding20}>
@@ -133,7 +148,7 @@ const Home = () => {
             </TouchableOpacity>
           )}
         />
-        <View style={styles.padding20}>
+        {/* <View style={styles.padding20}>
           <CategoriesFor title="Recommeded for you" isImage />
         </View>
         <FlatList
@@ -152,7 +167,7 @@ const Home = () => {
               onPress={() => navigation.navigate(SCREENS.DairyProducts)}
             />
           )}
-        />
+        /> */}
 
         <View style={styles.padding20}>
           <CategoriesFor title="Our Farm" />

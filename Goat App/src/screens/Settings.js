@@ -39,7 +39,7 @@ const Settings = () => {
   const dispatch = useDispatch();
   const { USER_DATA } = useSelector((state) => state.User);
 
-  
+
   const data = [
     {
       title: "Manage Schedule",
@@ -53,7 +53,8 @@ const Settings = () => {
       icon: Assets.Goat_SettingOrder,
       route: "MyOrders",
       callback: () => {
-        dispatch(getOrders);
+        dispatch(getOrders());
+        navigation.navigate('MyOrders')
       },
     },
     {

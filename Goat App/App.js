@@ -44,7 +44,7 @@ import persistStore from "redux-persist/es/persistStore";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { getUserData } from "./src/Store/slice/UserSlices";
-import { getAddress, getProductList } from "./src/Store/slice/HomeSlices";
+import { getAddress, getCategories, getProductList } from "./src/Store/slice/HomeSlices";
 import LoaderModal from "./src/components/LoaderModal";
 
 const Stack = createNativeStackNavigator();
@@ -109,7 +109,7 @@ const AppMain = () => {
     enableLatestRenderer()
     // alert(accessToken);
     if (accessToken) {
-      // dispatch(getCategories());
+      dispatch(getCategories());
       dispatch(getUserData());
       dispatch(getProductList());
       dispatch(getAddress(userID));
