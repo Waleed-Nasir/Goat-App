@@ -4,7 +4,7 @@
             "outputFile": "com.awesomeproject.app-mergeReleaseResources-32:/values-he/values-he.xml",
             "map": [
                 {
-                    "source": "/Users/macbook/Desktop/Projects/Goat-App/Goat App/node_modules/react-native-date-picker/android/build/intermediates/packaged_res/release/values-he/values-he.xml",
+                    "source": "/Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-date-picker/android/build/intermediates/packaged_res/release/values-he/values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

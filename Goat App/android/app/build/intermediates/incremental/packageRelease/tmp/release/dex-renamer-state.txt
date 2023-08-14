@@ -1,7 +1,7 @@
-#Tue Jun 27 17:38:33 PKT 2023
-base.1=/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
+#Mon Aug 14 15:00:48 PDT 2023
+base.1=/Users/waleednasir/Desktop/Goat-App/Goat App/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
 path.1=classes2.dex
-base.0=/Users/macbook/Desktop/Projects/Goat-App/Goat App/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+base.0=/Users/waleednasir/Desktop/Goat-App/Goat App/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex
