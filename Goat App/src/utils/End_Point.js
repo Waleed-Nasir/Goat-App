@@ -1,5 +1,5 @@
 export const API_URLS = {
-  BaseURL: "https://goat-backend.herokuapp.com/api/", //########DONE##########//
+  BaseURL: "http://202.165.236.164:4000/api/", //########DONE##########//
 
   //AUHT
   LOGIN: "auth/login/customer", //########DONE##########//
