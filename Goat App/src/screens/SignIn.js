@@ -32,7 +32,7 @@ const { width } = Dimensions.get("screen");
 const SingIn = () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
-  const [email, setEmail] = useState(__DEV__ ? "test2@test.com" : "");
+  const [email, setEmail] = useState(__DEV__ ? "test@test.com" : "");
   const [password, setpassword] = useState(__DEV__ ? "12345678" : "");
   const [ShowPassword, setShowPassword] = useState(false);
   const AccessToken = useSelector((state) => state.Auth.accessToken);

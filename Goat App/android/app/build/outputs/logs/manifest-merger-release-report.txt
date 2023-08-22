@@ -7,6 +7,7 @@ INJECTED from /Users/waleednasir/Desktop/Goat-App/Goat App/android/app/src/main/
 MERGED from [:react-native-maps] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-maps/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_async-storage] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/@react-native-community/async-storage/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-date-picker] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-date-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-geolocation-service] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-geolocation-service/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-linear-gradient] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-screens/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
@@ -202,6 +203,8 @@ MERGED from [:react-native-community_async-storage] /Users/waleednasir/Desktop/G
 MERGED from [:react-native-community_async-storage] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/@react-native-community/async-storage/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-date-picker] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-date-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-date-picker] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-date-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-geolocation-service] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-geolocation-service/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-geolocation-service] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-geolocation-service/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-linear-gradient] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-linear-gradient] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] /Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41

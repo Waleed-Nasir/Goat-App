@@ -24,11 +24,13 @@ const Address = ({
   isMapShow = false,
   leftIcon = Assets.Goat_DownPoly,
   LeftPress = () => {},
+  onPress = () => {},
   H = 2,
   Street = "",
   House = "",
   Nearest = "",
   City = "",
+  Tag = "",
 }) => {
   return (
     <View style={styles.AddressView}>
@@ -47,15 +49,15 @@ const Address = ({
         {/* {LocalAddress?.map(() => (
        
         ))} */}
-        <View style={{ flex: 1 }}>
+        <Pressable onPress={onPress} style={{ flex: 1 }}>
+          {Tag ? <Text style={[styles.AddressDText]}>{Tag}</Text> : null}
           <Text style={[styles.AddressText]}>
-            {Street}
-            {House}
+            {Street} {House}
           </Text>
           <Text style={[styles.AddressDText]}>
             {Nearest} {City}
           </Text>
-        </View>
+        </Pressable>
         {leftIcon ? (
           <Pressable onPress={LeftPress}>
             <Image

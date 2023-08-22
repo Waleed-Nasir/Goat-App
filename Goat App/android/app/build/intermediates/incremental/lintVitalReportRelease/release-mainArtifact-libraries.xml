@@ -117,6 +117,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="/Users/waleednasir/Desktop/Goat-App/Goat App/android@@:react-native-geolocation-service::release"
+      jars="/Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-geolocation-service/android/build/.transforms/a2519947737540dd92e3f0610ce8eff4/transformed/out/jars/classes.jar"
+      resolved="AwesomeProject:react-native-geolocation-service:unspecified"
+      folder="/Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-geolocation-service/android/build/.transforms/a2519947737540dd92e3f0610ce8eff4/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="/Users/waleednasir/Desktop/Goat-App/Goat App/android@@:react-native-linear-gradient::release"
       jars="/Users/waleednasir/Desktop/Goat-App/Goat App/node_modules/react-native-linear-gradient/android/build/.transforms/fab0e064277cc58d33f6ab12041e4d7c/transformed/out/jars/classes.jar"
       resolved="AwesomeProject:react-native-linear-gradient:unspecified"

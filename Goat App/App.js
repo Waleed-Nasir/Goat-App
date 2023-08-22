@@ -22,7 +22,7 @@ import ProductDetails from "./src/screens/ProductDetails";
 import Reason from "./src/screens/Reason";
 import SingIn from "./src/screens/SignIn";
 import SingUp from "./src/screens/SignUp";
-import {enableLatestRenderer} from 'react-native-maps';
+import { enableLatestRenderer } from "react-native-maps";
 import Splash from "./src/screens/Splash";
 import Welcome from "./src/screens/Welcome";
 import SelectAddress from "./src/screens/SelectAddress";
@@ -44,8 +44,14 @@ import persistStore from "redux-persist/es/persistStore";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { getUserData } from "./src/Store/slice/UserSlices";
-import { getAddress, getCategories, getProductList } from "./src/Store/slice/HomeSlices";
+import {
+  getAddress,
+  getCategories,
+  getProductList,
+} from "./src/Store/slice/HomeSlices";
 import LoaderModal from "./src/components/LoaderModal";
+import AddanEditAddress from "./src/screens/AddandEditAddress";
+import SearchProducts from "./src/screens/SearchProducts";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -74,6 +80,8 @@ export const SCREENS = {
   MyOrders: "MyOrders",
   Profile: "Profile",
   WishList: "WishList",
+  AddanEditAddress: "AddanEditAddress",
+  SearchProducts: "SearchProducts",
 };
 const TAB = () => (
   <Tab.Navigator
@@ -91,6 +99,7 @@ const TAB = () => (
     <Tab.Screen name={SCREENS.Profile} component={Profile} />
     <Tab.Screen name={SCREENS.DairyProducts} component={DairyProducts} />
     <Tab.Screen name={SCREENS.ProductDetails} component={ProductDetails} />
+    <Tab.Screen name={SCREENS.AddanEditAddress} component={AddanEditAddress} />
 
     <Tab.Screen name={SCREENS.CheckOut} component={CheckOut} />
     <Tab.Screen name={SCREENS.TrackStatus} component={TrackStatus} />
@@ -104,9 +113,9 @@ const AppMain = () => {
   const dispatch = useDispatch();
   const { accessToken, userID } = useSelector((state) => state.Auth);
   const STATE = useSelector((state) => state);
-  console.log(userID)
+  console.log(userID);
   useEffect(() => {
-    enableLatestRenderer()
+    enableLatestRenderer();
     // alert(accessToken);
     if (accessToken) {
       dispatch(getCategories());
@@ -133,7 +142,10 @@ const AppMain = () => {
         <Stack.Screen name={SCREENS.MapView} component={MapView} />
         <Stack.Screen name={SCREENS.OderDetails} component={OderDetails} />
         <Stack.Screen name={SCREENS.Reason} component={Reason} /> */}
-        {/* <Stack.Screen name={SCREENS.Home} component={Home} /> */}
+        <Stack.Screen
+          name={SCREENS.SearchProducts}
+          component={SearchProducts}
+        />
         <Stack.Screen name={SCREENS.Home} component={TAB} />
         <Stack.Screen name={SCREENS.SelectAddress} component={SelectAddress} />
         <Stack.Screen name={SCREENS.MapView} component={MapView} />

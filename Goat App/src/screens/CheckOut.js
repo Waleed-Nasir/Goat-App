@@ -36,7 +36,10 @@ import Address from "../components/Address";
 import { useNavigation } from "@react-navigation/native";
 import { SCREENS } from "../../App";
 import { useDispatch, useSelector } from "react-redux";
-import { getOneClikedBuy, gethandleCartProduct } from "../Store/slice/UserLocal";
+import {
+  getOneClikedBuy,
+  gethandleCartProduct,
+} from "../Store/slice/UserLocal";
 import { getPlaceOrder } from "../Store/slice/HomeSlices";
 
 const OPS = [
@@ -52,7 +55,9 @@ const CheckOut = () => {
   const [accpet, setAccpet] = useState(0);
   const navigation = useNavigation();
   const { LocalAddress, OneClickBuy } = useSelector((STATE) => STATE.UserLocal);
+  const { address } = useSelector((STATE) => STATE.Home);
   const dispatch = useDispatch();
+  console.log(address, "address");
   // Street: "",
   // House: "",
   // Nearest: "",
@@ -63,7 +68,7 @@ const CheckOut = () => {
       NewSet["OrderData"]["deliverySlot"] = !Shift ? "morning" : "evening";
       NewSet["OrderData"]["paymentMethod"] = OPS[Radio].value;
       // NewSet["OrderData"]["addressLine1"] =
-      //   ; 
+      //   ;
       dispatch(getOneClikedBuy(NewSet));
     }
   }, [Radio, Shift, LocalAddress]);
@@ -72,13 +77,11 @@ const CheckOut = () => {
     if (OneClickBuy?.total) {
       dispatch(gethandleCartProduct({}));
       dispatch(getOneClikedBuy({}));
-
     } else {
       dispatch(getOneClikedBuy({}));
     }
     navigation.navigate(SCREENS.Home);
     // navigation.navigate(SCREENS.TrackStatus);
-
   };
 
   return (
@@ -90,12 +93,16 @@ const CheckOut = () => {
       </View>
 
       <View style={styles.padding20}>
-        {LocalAddress ? (
-          <Address
-            {...LocalAddress}
-            LeftPress={() => navigation.navigate(SCREENS.SelectAddress)}
-          />
-        ) : null}
+        {LocalAddress
+          ? LocalAddress.map((item) =>
+              item.selected ? (
+                <Address
+                  {...item}
+                  LeftPress={() => navigation.navigate(SCREENS.SelectAddress)}
+                />
+              ) : null
+            )
+          : null}
         <View style={styles.divider} />
         <View style={[styles.Row, styles.MB_10]}>
           <Text style={styles.MainText}>Select payment method</Text>
@@ -189,16 +196,22 @@ const CheckOut = () => {
         </View>
         {OneClickBuy?.OrderData?.items?.map((item) => (
           <View style={styles.Row}>
-            <Text style={[styles.MiniText]}>{OneClickBuy.name || item.name}</Text>
+            <Text style={[styles.MiniText]}>
+              {OneClickBuy.name || item.name}
+            </Text>
             <Text style={[styles.MiniText]}>Qty: {item?.quantity}</Text>
-            <Text style={[styles.MiniText]}>Price: {item?.price || OneClickBuy?.price}</Text>
+            <Text style={[styles.MiniText]}>
+              Price: {item?.price || OneClickBuy?.price}
+            </Text>
           </View>
         ))}
         <View style={styles.divider} />
         <View style={styles.Row}>
           <Text style={[styles.MiniText]}>Order amount</Text>
           <Text style={[styles.MiniText]}>
-            {OneClickBuy?.total ? OneClickBuy?.total : OneClickBuy?.OrderData?.items[0]?.quantity * OneClickBuy?.price}
+            {OneClickBuy?.total
+              ? OneClickBuy?.total
+              : OneClickBuy?.OrderData?.items[0]?.quantity * OneClickBuy?.price}
           </Text>
         </View>
 
@@ -249,8 +262,11 @@ const CheckOut = () => {
             Total amount
           </Text>
           <Text style={[styles.MiniText, { fontWeight: "700" }]}>
-            {OneClickBuy?.total ? OneClickBuy?.total + 200 : OneClickBuy?.OrderData?.items[0]?.quantity * OneClickBuy?.price +
-              200}
+            {OneClickBuy?.total
+              ? OneClickBuy?.total + 200
+              : OneClickBuy?.OrderData?.items[0]?.quantity *
+                  OneClickBuy?.price +
+                200}
           </Text>
         </View>
         <View style={styles.divider} />
@@ -261,14 +277,17 @@ const CheckOut = () => {
             dispatch(
               getPlaceOrder({
                 data: {
-                  ...OneClickBuy.OrderData, addressLine1: LocalAddress?.Street +
+                  ...OneClickBuy.OrderData,
+                  addressLine1:
+                    LocalAddress?.Street +
                     " " +
                     LocalAddress?.House +
                     " " +
                     LocalAddress?.Nearest +
                     " " +
-                    LocalAddress?.City
-                }, CallBack: CallBack
+                    LocalAddress?.City,
+                },
+                CallBack: CallBack,
               })
             );
           }}

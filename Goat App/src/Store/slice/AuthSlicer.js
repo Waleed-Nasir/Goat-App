@@ -63,7 +63,7 @@ export const updatePassword = createAsyncThunk(
       thunk.dispatch(loaderVisibility(true));
       const response = await AuthService.updatePassword(body);
       thunk.dispatch(AuthSlice.actions.setPasswordUpdated(true));
-      MessageShow("success", "Success", response.msg);
+      MessageShow("success", "Success", response.message);
       thunk.dispatch(loaderVisibility(false));
       return thunk.fulfillWithValue(response);
     } catch (error) {
@@ -101,11 +101,12 @@ export const AuthSlice = createSlice({
   reducers: {
     saveAccessToken: (state, action) => {
       let payload = action.payload.data;
-      state.accessToken = payload.user.token;//"Bearer " +
+      state.accessToken =  payload.user.token; //"Bearer " +
       state.userID = payload.user._id;
     },
     removeAccessToken: (state, action) => {
       state.accessToken = null;
+      state.userID = null;
     },
     setResetScreen: (state, action) => {
       let payload = action.payload;

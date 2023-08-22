@@ -57,7 +57,7 @@ const MapView = () => {
     <Layout>
       <View style={styles.Main}>
         <View style={styles.detailsMap}>
-          <AppMap />
+          <AppMap CallBack={(position) => console.log(position)} />
           {/* <Image source={Assets.FullMap} resizeMode={'center'} /> */}
         </View>
         <View style={styles.MainView}>
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
 
   detailsMap: {
     width: "100%",
-    height: height-50,
+    height: height - 50,
   },
   HeaderBack: {
     width: "100%",

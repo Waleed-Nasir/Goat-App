@@ -22,6 +22,7 @@ import { COLOR } from "../assets/colors";
 import { Assets } from "../assets/images";
 import { Button } from "../components/Button";
 import Layout from "../Layout";
+import { removeAccessToken } from "../Store/slice/AuthSlicer";
 import { getOrders } from "../Store/slice/HomeSlices";
 import Header from "./Header";
 const { width } = Dimensions.get("screen");
@@ -39,7 +40,6 @@ const Settings = () => {
   const dispatch = useDispatch();
   const { USER_DATA } = useSelector((state) => state.User);
 
-
   const data = [
     {
       title: "Manage Schedule",
@@ -54,7 +54,7 @@ const Settings = () => {
       route: "MyOrders",
       callback: () => {
         dispatch(getOrders());
-        navigation.navigate('MyOrders')
+        navigation.navigate("MyOrders");
       },
     },
     {
@@ -137,6 +137,7 @@ const Settings = () => {
           <Button
             title="Log Out"
             onPress={() => {
+              dispatch(removeAccessToken(null));
               navigation.navigate(SCREENS.Welcome);
             }}
           />

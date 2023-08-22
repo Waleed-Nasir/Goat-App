@@ -3,8 +3,6 @@ import { Store } from "../Store";
 import { API_URLS } from "../../utils/End_Point";
 import { getAccessToken } from "../slice/AuthSlicer";
 
-
-
 const SelectedCategoriesList = async (params = "") => {
   const token = getAccessToken(Store.getState());
   const onSuccess = ({ data }) => {
@@ -16,9 +14,13 @@ const SelectedCategoriesList = async (params = "") => {
   };
 
   try {
-    const result = await axios.post(API_URLS.BaseURL + API_URLS.GET_PRODUCTS_BY_CATEGORY, { category: params }, {
-      headers: { Authorization: "Bearer " + token },
-    });
+    const result = await axios.post(
+      API_URLS.BaseURL + API_URLS.GET_PRODUCTS_BY_CATEGORY,
+      { category: params },
+      {
+        headers: { Authorization: "Bearer " + token },
+      }
+    );
     return onSuccess(result);
   } catch (error) {
     return onFailure(error);
@@ -199,6 +201,29 @@ const Address = async (user_id) => {
     return onFailure(error);
   }
 };
+const SearchProduct = async (params = "") => {
+  const token = getAccessToken(Store.getState());
+  const onSuccess = ({ data }) => {
+    return data;
+  };
+
+  const onFailure = (error) => {
+    throw error;
+  };
+
+  try {
+    const result = await axios.post(
+      API_URLS.BaseURL + API_URLS.SEARCH_PRODUCTS,
+      params,
+      {
+        headers: { Authorization: "Bearer " + token },
+      }
+    );
+    return onSuccess(result);
+  } catch (error) {
+    return onFailure(error);
+  }
+};
 const MainService = {
   ProductList,
   ProductDetails,
@@ -208,7 +233,8 @@ const MainService = {
   OrderDetails,
   Address,
   Categories,
-  SelectedCategoriesList
+  SelectedCategoriesList,
+  SearchProduct
 };
 
 export default MainService;

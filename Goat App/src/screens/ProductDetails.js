@@ -50,11 +50,11 @@ const ProductDetails = () => {
   const [OrderData, setOrderData] = useState({});
   const [rating, setRating] = useState(0);
   const dispatch = useDispatch();
-  const { CartProduct, FavProduct, LocalAddress } = useSelector((STATE) => STATE.UserLocal);
+  const { CartProduct, FavProduct, LocalAddress } = useSelector(
+    (STATE) => STATE.UserLocal
+  );
 
   const like = FavProduct?.map((item) => item._id)?.includes(product?._id);
-  console.log(OrderData, "ProductDetail", like, FavProduct, product?._id);
-
 
   useEffect(() => {
     if (LocalAddress && LocalAddress?.Street && OrderData) {
@@ -68,9 +68,11 @@ const ProductDetails = () => {
           LocalAddress?.Nearest +
           " " +
           LocalAddress?.City,
-      })
+      });
     }
-  }, [])
+  }, []);
+
+  console.log(ProductDetail);
   return (
     <Layout
       Header={() => <Header showSlider={false} />}
@@ -106,7 +108,7 @@ const ProductDetails = () => {
         <TouchableOpacity style={styles.ProductDetailsButton}>
           <Image
             style={styles.Banner}
-            source={Assets.Goat_Bottle}
+            source={{ uri: product?.imageUrl }}
             resizeMode={"stretch"}
           />
         </TouchableOpacity>

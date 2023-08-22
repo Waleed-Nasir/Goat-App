@@ -6,33 +6,25 @@
  * @flow strict-local
  */
 
-import React, { useState } from 'react';
+import { useNavigation } from "@react-navigation/native";
+import React from "react";
 import {
   Dimensions,
   FlatList,
   Image,
-  ImageBackground,
   Pressable,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
-} from 'react-native';
-import { COLOR } from '../assets/colors';
-import { Assets } from '../assets/images';
-import Layout from '../Layout';
-import Header from './Header';
-const { width } = Dimensions.get('screen');
-import StarRating from 'react-native-star-rating-widget';
-import MainItem from '../components/MeanItem';
-import Item from '../components/Item';
-import CategoriesFor from '../components/CategoriesFor';
-import { Button } from '../components/Button';
-import Accordian from '../components/Accordian';
-import VerticalSlider from '../components/VerticalSlider';
-import { SCREENS } from '../../App';
-import { useNavigation } from '@react-navigation/native';
-import { useSelector } from 'react-redux';
+} from "react-native";
+import { useSelector } from "react-redux";
+import { SCREENS } from "../../App";
+import { COLOR } from "../assets/colors";
+import { Assets } from "../assets/images";
+import Item from "../components/Item";
+import Layout from "../Layout";
+import Header from "./Header";
+const { width } = Dimensions.get("screen");
 
 const DairyProducts = () => {
   const navigation = useNavigation();
@@ -42,33 +34,34 @@ const DairyProducts = () => {
     // Header={() =>}
     >
       <Header />
-      <View style={[styles.Row, { justifyContent: 'flex-start', padding: 15 }]}>
+      <View style={[styles.Row, { justifyContent: "flex-start", padding: 15 }]}>
         <Text
           style={[
             styles.FilerText,
-            { fontWeight: '400', color: COLOR.GrayText },
-          ]}>
+            { fontWeight: "400", color: COLOR.GrayText },
+          ]}
+        >
           Home
         </Text>
         <Image
           source={Assets.Goat_SettingArrow}
           style={styles.MiniArrow}
-          resizeMode={'stretch'}
+          resizeMode={"stretch"}
         />
-        <Text style={[styles.FilerText, { fontWeight: '400' }]}>Category</Text>
+        <Text style={[styles.FilerText, { fontWeight: "400" }]}>Category</Text>
         <Image
           source={Assets.Goat_SettingArrow}
           style={styles.MiniArrow}
-          resizeMode={'stretch'}
+          resizeMode={"stretch"}
         />
-        <Text style={[styles.FilerText, { fontWeight: '400' }]}>
+        <Text style={[styles.FilerText, { fontWeight: "400" }]}>
           Product List
         </Text>
       </View>
       <View style={styles.padding20}>
         <View style={styles.Row}>
           <Text style={styles.MainText}>Dairy Products</Text>
-          <View style={[styles.Row, { justifyContent: 'flex-end' }]}>
+          <View style={[styles.Row, { justifyContent: "flex-end" }]}>
             <Pressable>
               <Image source={Assets.Goat_ListPreview} />
             </Pressable>
@@ -88,18 +81,14 @@ const DairyProducts = () => {
       </View>
       <FlatList
         numColumns={2}
-        style={{ width: '100%' }}
+        style={{ width: "100%" }}
         contentContainerStyle={{ paddingHorizontal: 11 }}
         data={SelectedCategoriesList}
         renderItem={({ item, index }) => (
           <Item
             data={item}
-            productImage={
-              index % 2 == 1 ? Assets.Goat_Meat : Assets.Goat_Bottle
-            }
-            onPress={() =>
-              navigation.navigate(SCREENS.ProductDetails)
-            }
+            productImage={{ uri: item?.imageUrl }}
+            onPress={() => navigation.navigate(SCREENS.ProductDetails)}
             index={index}
           />
         )}
@@ -110,63 +99,63 @@ const DairyProducts = () => {
 
 const styles = StyleSheet.create({
   Main: {
-    width: '100%',
+    width: "100%",
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: COLOR.White,
   },
 
   Container: {
-    width: '100%',
+    width: "100%",
     paddingHorizontal: 30,
     paddingTop: 20,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   Warp: {
-    width: '100%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    flexWrap: 'wrap',
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    flexWrap: "wrap",
     paddingBottom: 20,
   },
   padding20: {
     paddingHorizontal: 20,
     paddingVertical: 2,
-    width: '100%',
+    width: "100%",
   },
   VerticalSlider: {
-    width: '100%',
+    width: "100%",
   },
   Row: {
     flex: 1,
-    flexDirection: 'row',
-    width: '100%',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    width: "100%",
+    justifyContent: "space-between",
+    alignItems: "center",
     marginBottom: 5,
     marginTop: 10,
   },
   MainText: {
-    fontStyle: 'normal',
-    fontWeight: '500',
+    fontStyle: "normal",
+    fontWeight: "500",
     fontSize: 20,
     lineHeight: 26,
     color: COLOR.FullGreen,
   },
   FilerText: {
-    fontStyle: 'normal',
-    fontWeight: '500',
+    fontStyle: "normal",
+    fontWeight: "500",
     fontSize: 12,
     color: COLOR.DarkGreen,
     marginHorizontal: 5,
   },
   RowItem: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
   },
   divider: {
     width: 1,
@@ -175,9 +164,9 @@ const styles = StyleSheet.create({
     marginHorizontal: 8,
   },
   ProductView: {
-    flexWrap: 'wrap',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexWrap: "wrap",
+    flexDirection: "row",
+    justifyContent: "space-between",
     padding: 20,
   },
   MiniArrow: {

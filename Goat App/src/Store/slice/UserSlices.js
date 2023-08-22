@@ -47,17 +47,7 @@ export const updateUserPassword = createAsyncThunk(
     try {
       const response = await UserService.updateUserPassword(body);
       console.log(response, "response User");
-      if (response.status) {
-        body.callback();
-        MessageShow("success", "Password Updated Successfully");
-      } else {
-        MessageShow(
-          "error",
-          "Error",
-          showResponseError(response.message.password)
-        );
-      }
-
+      MessageShow("success", "Profile Updated Successfully");
       thunk.dispatch(loaderVisibility(false));
       return thunk.fulfillWithValue(response);
     } catch (error) {

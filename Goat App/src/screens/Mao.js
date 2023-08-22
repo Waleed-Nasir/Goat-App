@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
-export default function AppMap() {
+import Geolocation from "react-native-geolocation-service";
+export default function AppMap({ CallBack = () => {} }) {
   const [position, setPosition] = useState({
     latitude: 37.78825,
     longitude: -122.4324,
@@ -9,19 +10,19 @@ export default function AppMap() {
     longitudeDelta: 0.0121,
   });
 
-  // useEffect(() => {
-  //   Geolocation.getCurrentPosition((pos) => {
-  //     const crd = pos.coords;
-  //     setPosition({
-  //       latitude: crd.latitude,
-  //       longitude: crd.longitude,
-  //       latitudeDelta: 0.0421,
-  //       longitudeDelta: 0.0421,
-  //     });
-  //   }).catch((err) => {
-  //     console.log(err);
-  //   });
-  // }, []);
+  useEffect(() => {
+    CallBack(position);
+    // Geolocation.getCurrentPosition(
+    //   (position) => {
+    //     console.log(position);
+    //   },
+    //   (error) => {
+    //     // See error code charts below.
+    //     console.log(error.code, error.message);
+    //   },
+    //   { enableHighAccuracy: true, timeout: 150, maximumAge: 100 }
+    // );
+  }, [position]);
   return (
     <View style={styles.container}>
       {/*Render our MapView*/}
@@ -30,10 +31,10 @@ export default function AppMap() {
         //specify our coordinates.
         showsUserLocation
         provider={PROVIDER_GOOGLE}
-        showsCompass = {true}
-      showsMyLocationButton={true}
-      chacheEnabled={false}
-      zoomEnabled={true}
+        showsCompass={true}
+        showsMyLocationButton={true}
+        chacheEnabled={false}
+        zoomEnabled={true}
         region={{
           latitude: 37.78825,
           longitude: -122.4324,
@@ -48,7 +49,9 @@ export default function AppMap() {
         //     longitudeDelta: 0.004,
         //   });
         // }}
-        onRegionChange={(r)=>{setPosition(r)}}
+        onRegionChange={(r) => {
+          setPosition(r);
+        }}
       >
         <Marker
           title="Yor are here"

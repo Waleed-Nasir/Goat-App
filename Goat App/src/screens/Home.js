@@ -42,7 +42,15 @@ const Home = () => {
   const STATE = useSelector((STATE) => STATE);
   console.log(STATE);
   return (
-    <Layout Header={() => <Header showSlider={false} />}>
+    <Layout
+      Header={() => (
+        <Header
+          showSlider={false}
+          isButton
+          onPressSearch={() => navigation.navigate(SCREENS.SearchProducts)}
+        />
+      )}
+    >
       <View style={styles.Main}>
         <TouchableOpacity style={styles.HomeButton}>
           <ImageBackground
@@ -60,21 +68,34 @@ const Home = () => {
         </TouchableOpacity>
         <View style={styles.Container}>
           <CategoriesFor title="Categories" isImage />
-          {CategoriesList && CategoriesList[0] ? <MainItem
-            title={CategoriesList[0].name}
-            onPress={() => { dispatch(getSelectedCategoriesList(CategoriesList[0]?._id)), navigation.navigate(SCREENS.DairyProducts) }}
-          /> : null}
+          {CategoriesList && CategoriesList[0] ? (
+            <MainItem
+              title={CategoriesList[0].name}
+              productImage={{ uri: CategoriesList[0]?.imageUrl }}
+              onPress={() => {
+                dispatch(getSelectedCategoriesList(CategoriesList[0]?._id)),
+                  navigation.navigate(SCREENS.DairyProducts);
+              }}
+            />
+          ) : null}
           <View style={styles.Warp}>
             {CategoriesList?.map((item, index) => {
               if (index === 0) {
-                return null
+                return null;
               } else
-                return <MainItem
-                  type={2}
-                  title={item.name}
-                  onPress={() => { dispatch(getSelectedCategoriesList(item._id)), navigation.navigate(SCREENS.DairyProducts) }}
-                />
-              {/* <MainItem
+                return (
+                  <MainItem
+                    type={2}
+                    title={item.name}
+                    productImage={{ uri: item?.imageUrl }}
+                    onPress={() => {
+                      dispatch(getSelectedCategoriesList(item._id)),
+                        navigation.navigate(SCREENS.DairyProducts);
+                    }}
+                  />
+                );
+              {
+                /* <MainItem
             onPress={() => navigation.navigate(SCREENS.DairyProducts)}
             />
             
@@ -85,7 +106,8 @@ const Home = () => {
             onPress={() => navigation.navigate(SCREENS.DairyProducts)}
             productImage={Assets.Goat_Goat}
             />
-          </View> */}
+          </View> */
+              }
             })}
           </View>
         </View>
@@ -103,11 +125,10 @@ const Home = () => {
             <Item
               data={item}
               productImage={
-                index % 2 == 1 ? Assets.Goat_Meat : Assets.Goat_Bottle
+                { uri: item?.imageUrl }
+                // index % 2 == 1 ? Assets.Goat_Meat : Assets.Goat_Bottle
               }
-              onPress={() =>
-                navigation.navigate(SCREENS.ProductDetails)
-              }
+              onPress={() => navigation.navigate(SCREENS.ProductDetails)}
               index={index}
             />
           )}

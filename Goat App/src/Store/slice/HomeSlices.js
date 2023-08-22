@@ -10,8 +10,9 @@ const initialState = {
   address: [],
   CategoriesList: [],
   SelectedCategoriesList: [],
-  OrderDetails: {}
-  // 
+  OrderDetails: {},
+  SearchProductList: [],
+  //
 };
 
 export const getProductList = createAsyncThunk(
@@ -42,6 +43,22 @@ export const getCategories = createAsyncThunk(
     }
   }
 );
+export const getSearchProducts = createAsyncThunk(
+  "SearchProducts",
+  async (body, thunk) => {
+    try {
+      const response = await MainService.SearchProduct(body);
+      console.log(response, "response");
+      thunk.dispatch(
+        HomeSlice.actions.getSearchProduct(response.data.products)
+      );
+      return thunk.fulfillWithValue(response);
+    } catch (error) {
+      let err = MessageShow("error", "Error", showResponseError(error));
+      return thunk.rejectWithValue(err);
+    }
+  }
+);
 export const getSelectedCategoriesList = createAsyncThunk(
   "SelectedCategoriesList",
   async (body, thunk) => {
@@ -49,7 +66,9 @@ export const getSelectedCategoriesList = createAsyncThunk(
       thunk.dispatch(loaderVisibility(true));
       const response = await MainService.SelectedCategoriesList(body);
       console.log(response, "response");
-      thunk.dispatch(HomeSlice.actions.getSelectedCategoriesList(response.data.products));
+      thunk.dispatch(
+        HomeSlice.actions.getSelectedCategoriesList(response.data.products)
+      );
       thunk.dispatch(loaderVisibility(false));
       return thunk.fulfillWithValue(response);
     } catch (error) {
@@ -85,10 +104,11 @@ export const getPlaceOrder = createAsyncThunk(
       thunk.dispatch(loaderVisibility(true));
       const response = await MainService.PlaceOrder(body.data);
       MessageShow("success", response.message);
-      body?.CallBack()
+      body?.CallBack();
       thunk.dispatch(loaderVisibility(false));
       return thunk.fulfillWithValue(response);
     } catch (error) {
+      console.log(error, "error");
       let err = MessageShow("error", "Error", showResponseError(error));
       thunk.dispatch(loaderVisibility(false));
       return thunk.rejectWithValue(err);
@@ -129,22 +149,25 @@ export const getOrders = createAsyncThunk("getOrders", async (body, thunk) => {
     return thunk.rejectWithValue(err);
   }
 });
-export const getOrdersDetails = createAsyncThunk("getOrdersDetails", async (body, thunk) => {
-  try {
-    thunk.dispatch(loaderVisibility(true));
-    const response = await MainService.OrderDetails(body);
-    console.log(response, "response");
+export const getOrdersDetails = createAsyncThunk(
+  "getOrdersDetails",
+  async (body, thunk) => {
+    try {
+      thunk.dispatch(loaderVisibility(true));
+      const response = await MainService.OrderDetails(body);
+      console.log(response, "response");
 
-    thunk.dispatch(loaderVisibility(false));
-    thunk.dispatch(HomeSlice.actions.getOrdersDetails(response.data.order));
-    return thunk.fulfillWithValue(response);
-  } catch (error) {
-    thunk.dispatch(loaderVisibility(false));
+      thunk.dispatch(loaderVisibility(false));
+      thunk.dispatch(HomeSlice.actions.getOrdersDetails(response.data.order));
+      return thunk.fulfillWithValue(response);
+    } catch (error) {
+      thunk.dispatch(loaderVisibility(false));
 
-    let err = MessageShow("error", "Error", showResponseError(error));
-    return thunk.rejectWithValue(err);
+      let err = MessageShow("error", "Error", showResponseError(error));
+      return thunk.rejectWithValue(err);
+    }
   }
-});
+);
 
 export const getAddress = createAsyncThunk("Address", async (body, thunk) => {
   try {
@@ -188,6 +211,10 @@ export const HomeSlice = createSlice({
     getOrdersDetails: (state, action) => {
       let payload = action.payload;
       state.OrderDetails = payload;
+    },
+    getSearchProduct: (state, action) => {
+      let payload = action.payload;
+      state.SearchProductList = payload;
     },
   },
 });

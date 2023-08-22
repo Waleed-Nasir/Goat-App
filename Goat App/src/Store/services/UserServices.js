@@ -61,15 +61,15 @@ const updateUserPassword = async (params) => {
   const onFailure = (error) => {
     throw error;
   };
-  console.log(params, "updateUserPassword");
+  console.log(params, "updateUserPassword",token);
   try {
     const result = await axios.post(
-      API_URLS.BaseURL + API_URLS.UPDATE_PASSWORD + params.user_id,
-      params.data,
+      API_URLS.BaseURL + API_URLS.CHANGE_PASSWORD, //+ params.user_id,
+      params,
       {
         headers: {
-          "Content-Type": "multipart/form-data",
           Authorization: token,
+          "Content-Type": "multipart/form-data",
         },
       }
     );

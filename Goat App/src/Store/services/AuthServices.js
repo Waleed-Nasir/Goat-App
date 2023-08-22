@@ -14,16 +14,12 @@ const login = async (params) => {
   };
 
   try {
-    const result = await axios.post(
-      API_URLS.BaseURL + API_URLS.LOGIN,
-      data,
-      {
-        headers: {
-          'Content-Type': 'application/json'
-        },
-      }
-    );
-    console.log(result)
+    const result = await axios.post(API_URLS.BaseURL + API_URLS.LOGIN, data, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    console.log(result);
     return onSuccess(result);
   } catch (error) {
     return onFailure(error);
@@ -46,7 +42,7 @@ const register = async (params) => {
       data,
       {
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
       }
     );
@@ -138,10 +134,11 @@ const deleteAccount = async (ID) => {
   }
 };
 const updatePassword = async (params) => {
-  const formData = new FormData();
-  formData.append("token", params.code);
-  formData.append("email", params.email);
-  formData.append("password", params.password);
+  const token = getAccessToken(Store.getState());
+  // const formData = new FormData();
+  // formData.append("token", params.code);
+  // formData.append("email", params.email);
+  // formData.append("password", params.password);
 
   const onSuccess = ({ data }) => {
     return data;
@@ -153,10 +150,11 @@ const updatePassword = async (params) => {
 
   try {
     const result = await axios.post(
-      API_URLS.BaseURL + API_URLS.UPDATED_PASSWORD,
-      formData,
+      API_URLS.BaseURL + API_URLS.CHANGE_PASSWORD,
+      params,
       {
         headers: {
+          Authorization: token,
           "Content-Type": "multipart/form-data",
         },
       }

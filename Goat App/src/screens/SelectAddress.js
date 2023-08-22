@@ -38,167 +38,89 @@ import { SCREENS } from "../../App";
 import { useDispatch, useSelector } from "react-redux";
 import { addLocalAddress } from "../Store/slice/UserLocal";
 
-const OPS = [
-  "Cash On Delivery",
-  "Jazzcash",
-  "Easypaisa",
-  "Visa OR Master Card",
-];
-
 const SelectAddress = () => {
   const dispatch = useDispatch();
   const [AddressFor, setAddressFor] = useState(0);
   const [SHOW, setSHOW] = useState(0);
   const navigation = useNavigation();
-  const [address, setAddress] = useState({
-    Street: "",
-    House: "",
-    Nearest: "",
-    City: "",
-  });
+
   const { LocalAddress } = useSelector((STATE) => STATE.UserLocal);
-
+  console.log(LocalAddress, "LocalAddress");
   // addLocalAddress
-
-  console.log(LocalAddress, "address");
   return (
     <Layout
       Footer={() => (
         <View style={styles.padding20}>
-          {AddressFor === 0 ? (
-            <Button
-              title="Save & Continue"
-              onPress={() => {
-                navigation.goBack();
-              }}
-            />
-          ) : (
-            <View style={[styles.Row]}>
-              <Button
-                BG={[COLOR.DarkGreen, COLOR.DarkGreen]}
-                style={{ width: "48%" }}
-                title="Cancel"
-                onPress={() => {
-                  setSHOW(0), setAddressFor(0);
-                }}
-              />
-              <Button
-                style={{ width: "48%", marginLeft: "4%" }}
-                title="Confirm Location"
-                onPress={() => {
-                  setSHOW(0), setAddressFor(0);
-                  dispatch(addLocalAddress(address));
-                }}
-              />
-            </View>
-          )}
+          <Button
+            title="Save & Continue"
+            onPress={() => {
+              navigation.goBack();
+            }}
+          />
         </View>
       )}
       Header={() => <Header showSlider={false} />}
     >
       <View style={styles.padding20}>
         <View style={[styles.Row, styles.MT_40]}>
-          <Text style={styles.HeadingText}>
-            {AddressFor === 0 ? "SELECT ADDRESS" : "EDIT ADDRESS"}
-          </Text>
+          <Text style={styles.HeadingText}>ADDRESS MANAGEMENT</Text>
         </View>
       </View>
 
       <View style={styles.padding20}>
-        {LocalAddress ? (
-          <Address
-            {...LocalAddress}
-            leftIcon={AddressFor === 1 ? null : Assets.Goat_CirclePencil}
-            H={AddressFor === 0 ? 2 : 1.3}
-            LeftPress={() => {
-              setSHOW(1), setAddressFor(1);
-            }}
-          />
-        ) : null}
-        {AddressFor === 1 ? (
-          <>
-            <Input
-              InputProps={{
-                value: address.Street,
-                onChangeText: (e) => {
-                  setAddress({ ...address, Street: e });
-                },
-              }}
-              placeholder="Street Address"
-            />
-            <Input
-              InputProps={{
-                value: address.House,
-                onChangeText: (e) => {
-                  setAddress({ ...address, House: e });
-                },
-              }}
-              placeholder="House/Unit #"
-            />
-            <Input
-              InputProps={{
-                value: address.Nearest,
-                onChangeText: (e) => {
-                  setAddress({ ...address, Nearest: e });
-                },
-              }}
-              placeholder="Nearest Landmark"
-            />
-            <Input
-              InputProps={{
-                value: address.City,
-                onChangeText: (e) => {
-                  setAddress({ ...address, City: e });
-                },
-              }}
-              placeholder="City"
-            />
-            {SHOW === 1 ? (
-              <Input
-                placeholder="Notes To Rider......"
-                InputProps={{ numberOfLines: 5, multiline: true }}
-                InputStyle={{ height: 80 }}
+        {LocalAddress
+          ? LocalAddress?.map((Item, index) => (
+              <Address
+                {...Item}
+                leftIcon={
+                  AddressFor === 1
+                    ? null
+                    : Item.selected
+                    ? Assets.Goat_TrackConfirm
+                    : Assets.Goat_CirclePencil
+                }
+                H={AddressFor === 0 ? 2 : 1.3}
+                onPress={() => {
+                  dispatch(
+                    addLocalAddress(
+                      LocalAddress.map((item) =>
+                        item?.id === Item?.id
+                          ? { ...item, selected: true }
+                          : { ...item, selected: false }
+                      )
+                    )
+                  );
+                }}
+                LeftPress={() => {
+                  navigation.navigate(SCREENS.AddanEditAddress, {
+                    addressEdit: Item,
+                  });
+                }}
               />
-            ) : null}
-          </>
-        ) : null}
-        {AddressFor === 0 && SHOW === 0 ? (
-          <>
-            <View style={styles.divider} />
-            <Pressable
-              onPress={() => {
-                navigation.navigate(SCREENS.MapView);
-              }}
-              style={styles.Row}
-            >
-              <Image source={Assets.Goat_Location} />
-              <Text style={styles.MainText}>Use my current location</Text>
-            </Pressable>
-            <Pressable onPress={() => setAddressFor(1)} style={styles.Row}>
-              <Image source={Assets.Goat_Plus} />
-              <Text style={styles.MainText}>Add new address</Text>
-            </Pressable>
-          </>
-        ) : (
-          <>
-            {/* ==2=== */}
-            <View style={[styles.Row, styles.MT_40, styles.MB_10]}>
-              <Image source={Assets.Goat_AddTag} />
-              <Text style={styles.MainText}>Add a label</Text>
-            </View>
-            <View style={[styles.Row, styles.MB_10]}>
-              <Image
-                source={Assets.Goat_CircleHome}
-                style={styles.IconButton}
-              />
-              <Image source={Assets.Goat_CircleJob} style={styles.IconButton} />
-              <Image
-                source={Assets.Goat_CirclePlus}
-                style={styles.IconButton}
-              />
-            </View>
-          </>
-        )}
+            ))
+          : null}
+
+        <View style={styles.divider} />
+        <Pressable
+          onPress={() => {
+            navigation.navigate(SCREENS.MapView);
+          }}
+          style={styles.Row}
+        >
+          <Image source={Assets.Goat_Location} />
+          <Text style={styles.MainText}>Use my current location</Text>
+        </Pressable>
+        <Pressable
+          onPress={() => {
+            navigation.navigate(SCREENS.AddanEditAddress);
+          }}
+          style={styles.Row}
+        >
+          <Image source={Assets.Goat_Plus} />
+          <Text style={styles.MainText}>Add new address</Text>
+        </Pressable>
+
+        <View style={{ height: 100 }} />
       </View>
     </Layout>
   );

@@ -16,6 +16,8 @@ import { Button } from "../components/Button";
 import Input from "../components/Input";
 import OrderItem from "../components/OrderItem";
 import Layout from "../Layout";
+import { updateUserPassword } from "../Store/slice/UserSlices";
+import { MessageShow, Validator } from "../utils/Constant";
 import Header from "./Header";
 const { width } = Dimensions.get("screen");
 
@@ -23,16 +25,37 @@ const Profile = () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
 
+  const [params, setParams] = useState({
+    currentPassword: "",
+    changePassword: "",
+    confirmChangePassword: "",
+  });
+
+  const handleReset = () => {
+    let Vali = Validator({
+      CurrentPassword: params.currentPassword,
+      NewPassword: params.changePassword,
+      ReEnterPassword: params.confirmChangePassword,
+    });
+    if (Vali) {
+      if (params.changePassword === params.confirmChangePassword) {
+        dispatch(updateUserPassword(params))
+      } else {
+        MessageShow("error", "Password not match");
+      }
+    }
+  };
+
   return (
     <Layout Header={() => <Header showSlider={false} />}>
       <View style={[styles.Row, styles.MT_40, styles.padding20]}>
         <Text style={styles.HeadingText}>Settings</Text>
       </View>
       <View style={styles.padding20}>
-        <Input placeholder="Name" />
-        <Input placeholder="Email" />
-        <Input placeholder="Pasword" />
-        <View style={[styles.Row]}>
+        <Input placeholder="Name" InputProps={{ editable: false }} />
+        <Input placeholder="Email" InputProps={{ editable: false }} />
+        <Input placeholder="Pasword" InputProps={{ editable: false }} />
+        {/* <View style={[styles.Row]}>
           <Button
             style={{ flex: 0.49 }}
             BG={[COLOR.DarkGreen, COLOR.DarkGreen]}
@@ -45,21 +68,42 @@ const Profile = () => {
             title="Change"
             onPress={() => {}}
           />
-        </View>
+        </View> */}
       </View>
       <View style={[styles.Row, styles.MT_40, styles.padding20]}>
         <Text style={styles.HeadingText}>Change Password</Text>
       </View>
       <View style={styles.padding20}>
-        <Input placeholder="Current Password" />
-        <Input placeholder="New Password" />
-        <Input placeholder="Re-Enter New Password" />
+        <Input
+          placeholder="Current Password"
+          InputProps={{
+            onChangeText: (text) =>
+              setParams({ ...params, currentPassword: text }),
+            value: params.currentPassword,
+          }}
+        />
+        <Input
+          placeholder="New Password"
+          InputProps={{
+            onChangeText: (text) =>
+              setParams({ ...params, changePassword: text }),
+            value: params.changePassword,
+          }}
+        />
+        <Input
+          placeholder="Re-Enter New Password"
+          InputProps={{
+            onChangeText: (text) =>
+              setParams({ ...params, confirmChangePassword: text }),
+            value: params.confirmChangePassword,
+          }}
+        />
       </View>
       <View style={[styles.padding20]}>
         <Button
           title="Update"
           onPress={() => {
-            navigation.goBack();
+            handleReset();
           }}
         />
         <Button
