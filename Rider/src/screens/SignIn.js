@@ -92,7 +92,7 @@ const SingIn = () => {
             />
             <View style={styles.Message}>
               {/* <Text style={styles.Error}>Email or password is incorrect.</Text> */}
-              <Text style={styles.MiniText}>Forget password</Text>
+              {/* <Text style={styles.MiniText}>Forget password</Text> */}
             </View>
             <Button
               title="Sign in"

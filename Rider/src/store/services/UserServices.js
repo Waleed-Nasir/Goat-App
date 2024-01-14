@@ -38,12 +38,12 @@ const updateUserDetails = async (params) => {
 
   try {
     const result = await axios.post(
-      API_URLS.BaseURL + API_URLS.UPDATE_PROFILE + params.user_id,
+      API_URLS.BaseURL + API_URLS.UPDATE_PROFILE, // + params.user_id,
       params.data,
       {
         headers: {
-          "Content-Type": "multipart/form-data",
-          Authorization: token,
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
         },
       }
     );
@@ -64,12 +64,12 @@ const updateUserPassword = async (params) => {
   console.log(params, "updateUserPassword");
   try {
     const result = await axios.post(
-      API_URLS.BaseURL + API_URLS.UPDATE_PASSWORD + params.user_id,
-      params.data,
+      API_URLS.BaseURL + API_URLS.UPDATE_PASSWORD, //+ params.user_id,
+      params,
       {
         headers: {
-          "Content-Type": "multipart/form-data",
-          Authorization: token,
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
         },
       }
     );

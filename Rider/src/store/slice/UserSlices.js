@@ -54,7 +54,7 @@ export const updateUserPassword = createAsyncThunk(
         MessageShow(
           "error",
           "Error",
-          showResponseError(response.message.password)
+          showResponseError(response)
         );
       }
 

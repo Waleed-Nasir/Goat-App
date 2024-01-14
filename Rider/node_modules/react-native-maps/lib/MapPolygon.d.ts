@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { NativeSyntheticEvent, View, ViewProps } from 'react-native';
+import { View, ViewProps } from 'react-native';
 import { ProviderContext, NativeComponent, MapManagerCommand, UIManagerCommand } from './decorateMapComponent';
-import { LatLng, LineCapType, LineJoinType, Point } from './sharedTypes';
+import { PolygonPressEvent } from './MapPolygon.types';
+import { LatLng, LineCapType, LineJoinType } from './sharedTypes';
 export type MapPolygonProps = ViewProps & {
     /**
      * An array of coordinates to describe the polygon
@@ -137,19 +138,3 @@ export declare class MapPolygon extends React.Component<MapPolygonProps> {
 }
 declare const _default: typeof MapPolygon;
 export default _default;
-type PolygonPressEvent = NativeSyntheticEvent<{
-    action: 'polygon-press';
-    /**
-     * @platform iOS: Google Maps
-     */
-    id?: string;
-    /**
-     * @platform iOS: Apple Maps
-     * @platform Android
-     */
-    coordinate?: LatLng;
-    /**
-     * @platform Android
-     */
-    position?: Point;
-}>;
